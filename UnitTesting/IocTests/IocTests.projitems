@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{3400F11A-E58B-40F5-86A7-D20901B7495B}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>IocTests</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AutofacResolveTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NinjectResolveTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ResolveTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IMyService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MyServiceNoDefaultCtor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Service.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SimpleContainerResolverTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SimpleInjectorResolveTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TinyIocResolveTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnityResolverTests.cs" />
+  </ItemGroup>
+</Project>
