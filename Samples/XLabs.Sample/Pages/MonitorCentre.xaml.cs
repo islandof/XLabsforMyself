@@ -25,6 +25,7 @@ namespace XLabs.Sample.Pages
 
         private void Alert_OnClicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync((Page)ViewFactory.CreatePage<ZhalanAlarmListViewModel, Page>());
             //Navigation.PushAsync(ViewFactory.CreatePage<ZhalanAlarmListViewModel>());
         }
 

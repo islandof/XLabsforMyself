@@ -147,49 +147,49 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
     <BundleResource Include="fonts\Roboto-Light.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
-    <BundleResource Include="BusyEarnin.mp3" />
-    <BundleResource Include="ad16.jpg" />
+    <BundleResource Include="Resources\BusyEarnin.mp3" />
+    <BundleResource Include="Resources\ad16.jpg" />
     <BundleResource Include="fonts\fontawesome-webfont.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
     <BundleResource Include="fonts\Open 24 Display St.ttf" />
-    <BundleResource Include="icon_facebook.png" />
-    <BundleResource Include="icon_google.png" />
-    <BundleResource Include="icon_microsoft.png" />
-    <BundleResource Include="icon_twitter.png" />
-    <BundleResource Include="panic.jpg" />
-    <BundleResource Include="imgNotAvailable.png" />
-    <BundleResource Include="pie27_32.png" />
-    <BundleResource Include="pie30_32.png" />
-    <BundleResource Include="services1_32.png" />
-    <BundleResource Include="Default.png" />
-    <BundleResource Include="Default%402x.png" />
-    <BundleResource Include="bubbles.jpg" />
-    <BundleResource Include="Icon-60%402x.png" />
-    <BundleResource Include="Icon-72.png" />
-    <BundleResource Include="Icon-72%402x.png" />
-    <BundleResource Include="Icon-76.png" />
-    <BundleResource Include="Icon-76%402x.png" />
-    <BundleResource Include="Icon-Small-40.png" />
-    <BundleResource Include="Icon-Small-40%402x.png" />
-    <BundleResource Include="Icon-Small-50.png" />
-    <BundleResource Include="Icon-Small-50%402x.png" />
-    <BundleResource Include="Icon-Small.png" />
-    <BundleResource Include="Icon-Small%402x.png" />
-    <BundleResource Include="Icon.png" />
-    <BundleResource Include="Icon%402x.png" />
-    <BundleResource Include="settings20_32.png" />
-    <BundleResource Include="settings20.png" />
-    <BundleResource Include="ToolbarGradient1.png" />
-    <BundleResource Include="ToolbarGradient2.png" />
-    <BundleResource Include="blackbackground.png" />
+    <BundleResource Include="Resources\icon_facebook.png" />
+    <BundleResource Include="Resources\icon_google.png" />
+    <BundleResource Include="Resources\icon_microsoft.png" />
+    <BundleResource Include="Resources\icon_twitter.png" />
+    <BundleResource Include="Resources\panic.jpg" />
+    <BundleResource Include="Resources\imgNotAvailable.png" />
+    <BundleResource Include="Resources\pie27_32.png" />
+    <BundleResource Include="Resources\pie30_32.png" />
+    <BundleResource Include="Resources\services1_32.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\bubbles.jpg" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Icon-72.png" />
+    <BundleResource Include="Resources\Icon-72%402x.png" />
+    <BundleResource Include="Resources\Icon-76.png" />
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-40.png" />
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-50.png" />
+    <BundleResource Include="Resources\Icon-Small-50%402x.png" />
+    <BundleResource Include="Resources\Icon-Small.png" />
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\settings20_32.png" />
+    <BundleResource Include="Resources\settings20.png" />
+    <BundleResource Include="Resources\ToolbarGradient1.png" />
+    <BundleResource Include="Resources\ToolbarGradient2.png" />
+    <BundleResource Include="Resources\blackbackground.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="Resources\app.config" />
     <None Include="Info.plist">
       <SubType>Designer</SubType>
     </None>
@@ -271,34 +271,34 @@
     <Content Include="..\XLabs.Sample.WP\HTML\home.html">
       <Link>HTML\home.html</Link>
     </Content>
-    <Content Include="alert.ico" />
-    <Content Include="alert2.ico" />
-    <Content Include="call.ico" />
-    <Content Include="call2.ico" />
-    <Content Include="carmanage.ico" />
-    <Content Include="carsacn.ico" />
-    <Content Include="carsafe.ico" />
-    <Content Include="carscan2.ico" />
-    <Content Include="carscan3.ico" />
-    <Content Include="chart.ico" />
-    <Content Include="clock.ico" />
-    <Content Include="clock2.ico" />
-    <Content Include="dandrive.ico" />
-    <Content Include="dandrive2.ico" />
-    <Content Include="fast.ico" />
-    <Content Include="gasolin.ico" />
-    <Content Include="gasolin2.ico" />
-    <Content Include="locate.ico" />
-    <Content Include="locate2.ico" />
-    <Content Include="messagecentre.ico" />
-    <Content Include="monitor.ico" />
-    <Content Include="people.ico" />
-    <Content Include="safe.ico" />
-    <Content Include="safe2.ico" />
-    <Content Include="search.ico" />
-    <Content Include="trace.ico" />
-    <Content Include="trace2.ico" />
-    <Content Include="vehicle.ico" />
+    <Content Include="Resources\alert.ico" />
+    <Content Include="Resources\alert2.ico" />
+    <Content Include="Resources\call.ico" />
+    <Content Include="Resources\call2.ico" />
+    <Content Include="Resources\carmanage.ico" />
+    <Content Include="Resources\carsacn.ico" />
+    <Content Include="Resources\carsafe.ico" />
+    <Content Include="Resources\carscan2.ico" />
+    <Content Include="Resources\carscan3.ico" />
+    <Content Include="Resources\chart.ico" />
+    <Content Include="Resources\clock.ico" />
+    <Content Include="Resources\clock2.ico" />
+    <Content Include="Resources\dandrive.ico" />
+    <Content Include="Resources\dandrive2.ico" />
+    <Content Include="Resources\fast.ico" />
+    <Content Include="Resources\gasolin.ico" />
+    <Content Include="Resources\gasolin2.ico" />
+    <Content Include="Resources\locate.ico" />
+    <Content Include="Resources\locate2.ico" />
+    <Content Include="Resources\messagecentre.ico" />
+    <Content Include="Resources\monitor.ico" />
+    <Content Include="Resources\people.ico" />
+    <Content Include="Resources\safe.ico" />
+    <Content Include="Resources\safe2.ico" />
+    <Content Include="Resources\search.ico" />
+    <Content Include="Resources\trace.ico" />
+    <Content Include="Resources\trace2.ico" />
+    <Content Include="Resources\vehicle.ico" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

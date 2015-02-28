@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XLabs.Sample.Pages.Monitor.ZhalanAlarmList">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="HeaderStyle" TargetType="Label">
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="BackgroundColor" Value="Aqua" />
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="XAlign" Value="Center" />
+        <Setter Property="YAlign" Value="Center" />
+        <Setter Property="FontSize" Value="Medium" />
+      </Style>
+      <Style x:Key="DetailStyle" TargetType="Label">
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="XAlign" Value="Center" />
+        <Setter Property="YAlign" Value="Center" />
+        <Setter Property="FontSize" Value="Small" />
+      </Style>
+      <Style x:Key="SearchBarStyle" TargetType="SearchBar">
+        <!--				<Setter Property="BackgroundColor" Value="White" />-->
+        <Setter Property="Placeholder" Value="查询 (车牌)"/>
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <StackLayout Orientation="Vertical">
+    <StackLayout Padding="10,5,10,5">
+      <SearchBar Text="{Binding keyValues,Mode=TwoWay}"  Style="{StaticResource SearchBarStyle}" SearchCommand="{Binding SearchBarCommand}" />
+    </StackLayout>
+    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+      <Label Text="车牌号" Style="{StaticResource HeaderStyle}" />
+      <Label Text="发生时间" Style="{StaticResource HeaderStyle}" />
+      <Label Text="栅栏名字" Style="{StaticResource HeaderStyle}" />
+      <Label Text="条件" Style="{StaticResource HeaderStyle}" />
+    </StackLayout>
+    <ListView ItemsSource="{Binding ZhalanAlarmList,Mode=OneWay}" HasUnevenRows="True">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+              <Label Text="{Binding chepaino,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="Start"/>
+              <Label Text="{Binding dthappen,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="Center"/>
+              <Label Text="{Binding zhalanname,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="Center"/>
+              <Label Text="{Binding condition,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="End"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

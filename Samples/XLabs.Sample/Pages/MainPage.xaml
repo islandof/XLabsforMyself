@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<controls:ExtendedTabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pages="clr-namespace:XLabs.Sample.Pages;assembly=XLabs.Sample"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Name="EtTabbedPage"
              x:Class="XLabs.Sample.Pages.MainPage">
   <TabbedPage.Children >    
     <pages:MonitorCentre Title="监控中心" Icon="services1_32.png"/>
     <pages:CarManage Title="车队管理" Icon="settings20_32.png"/>
     <pages:WelcomePage Title="消息中心" Icon="pie30_32.png" />
   </TabbedPage.Children>
-</TabbedPage>
+</controls:ExtendedTabbedPage>
