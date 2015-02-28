@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XLabs.Sample.Pages.LoginPage" 
+             Title="登陆"
+             BackgroundColor="White">
+  <StackLayout VerticalOptions="FillAndExpand" Padding="50">
+    <Frame Padding="75">
+      <Label Text="登陆"
+      Font="Bold,Large"
+      HorizontalOptions="Center">
+        <Label.TextColor>
+          <OnPlatform x:TypeArguments="Color"
+				iOS="Accent"
+				WinPhone="Accent"
+				Android="#afcca6"/>
+        </Label.TextColor>
+      </Label>
+    </Frame>
+    <Label Text="用户名"
+           HorizontalOptions="Start"/>
+    <Entry x:Name="Username"
+           Text="{Binding Username}"
+           Focused="VisualElement_OnFocused"
+           Placeholder="输入用户名"
+           TextColor="Black"
+           HorizontalOptions="FillAndExpand"/>
+    <Label Text="密码"
+           HorizontalOptions="Start"/>
+    <Entry x:Name="Password"
+           Text="{Binding Password}"
+           Placeholder="输入密码"
+           IsPassword="True"
+           TextColor="Black"
+           HorizontalOptions="FillAndExpand"
+           />
+    <Button Text="登陆"
+            Command="{Binding LoginCommand}"
+            HorizontalOptions="CenterAndExpand"/>
+  </StackLayout>
+</ContentPage>

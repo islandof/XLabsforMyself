@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XLabs.Sample.Pages.Monitor.DangerDriveList" Title="危险驾驶">
+  <CarouselPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="HeaderStyle" TargetType="Label">
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="BackgroundColor" Value="Aqua" />
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="XAlign" Value="Center" />
+        <Setter Property="YAlign" Value="Center" />
+        <Setter Property="FontSize" Value="Medium" />
+      </Style>
+      <Style x:Key="DetailStyle" TargetType="Label">
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="XAlign" Value="Center" />
+        <Setter Property="YAlign" Value="Center" />
+        <Setter Property="FontSize" Value="Small" />
+      </Style>
+      <Style x:Key="SearchBarStyle" TargetType="SearchBar">
+        <!--				<Setter Property="BackgroundColor" Value="White" />-->
+        <Setter Property="Placeholder" Value="查询 (车牌)"/>
+      </Style>
+    </ResourceDictionary>
+  </CarouselPage.Resources>
+  <ContentPage Title="危险驾驶1">
+    <StackLayout Orientation="Vertical">
+      <StackLayout Padding="10,5,10,5">
+        <SearchBar Text="{Binding keyValues,Mode=TwoWay}"  Style="{StaticResource SearchBarStyle}" SearchCommand="{Binding SearchBarCommand}" />
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+        <Label Text="车牌号" Style="{StaticResource HeaderStyle}" />
+        <Label Text="急刹车" Style="{StaticResource HeaderStyle}" />
+        <Label Text="急加油" Style="{StaticResource HeaderStyle}" />
+        <Label Text="快速变道" Style="{StaticResource HeaderStyle}" />
+      </StackLayout>
+      <ListView ItemsSource="{Binding DangerDriveList,Mode=OneWay}" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Label Text="{Binding chepaino,Mode=OneWay}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala10,Mode=OneWay}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala11,Mode=OneWay}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala12,Mode=OneWay}" Style="{StaticResource DetailStyle}" />
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage>
+  <ContentPage Title="危险驾驶2">
+    <StackLayout Orientation="Vertical">
+      <StackLayout Padding="10,5,10,5">
+        <SearchBar Text="{Binding keyValues,Mode=TwoWay}" Placeholder="查询 (车牌)" SearchCommand="{Binding SearchBarCommand}" />
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+        <Label Text="车牌号" Style="{StaticResource HeaderStyle}" />
+        <Label Text="弯道加速" Style="{StaticResource HeaderStyle}" />
+        <Label Text="碰撞" Style="{StaticResource HeaderStyle}" />
+        <Label Text="频繁变道" Style="{StaticResource HeaderStyle}" />
+      </StackLayout>
+      <ListView ItemsSource="{Binding DangerDriveList,Mode=OneWay}" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Label Text="{Binding chepaino}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala13}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala14}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala15}" Style="{StaticResource DetailStyle}" />
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage>
+  <ContentPage Title="危险驾驶3">
+    <StackLayout Orientation="Vertical">
+      <StackLayout Padding="10,5,10,5">
+        <SearchBar Text="{Binding keyValues,Mode=TwoWay}" Placeholder="查询 (车牌)" SearchCommand="{Binding SearchBarCommand}" />
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+        <Label Text="车牌号" Style="{StaticResource HeaderStyle}" />
+        <Label Text="烂路高速" Style="{StaticResource HeaderStyle}" />
+        <Label Text="急转弯" Style="{StaticResource HeaderStyle}" />
+        <Label Text="翻车" Style="{StaticResource HeaderStyle}" />
+      </StackLayout>
+      <ListView ItemsSource="{Binding DangerDriveList,Mode=OneWay}" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Label Text="{Binding chepaino}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala16}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala17}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala18}" Style="{StaticResource DetailStyle}" />
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage>
+  <ContentPage Title="危险驾驶4">
+    <StackLayout Orientation="Vertical">
+      <StackLayout Padding="10,5,10,5">
+        <SearchBar Text="{Binding keyValues,Mode=TwoWay}" Placeholder="查询 (车牌)" SearchCommand="{Binding SearchBarCommand}" />
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+        <Label Text="车牌号" Style="{StaticResource HeaderStyle}" />
+        <Label Text="异常震动" Style="{StaticResource HeaderStyle}" />
+        <Label Text="车门异常" Style="{StaticResource HeaderStyle}" />
+        <Label Text="胎压手刹异常" Style="{StaticResource HeaderStyle}" />
+      </StackLayout>
+      <ListView ItemsSource="{Binding DangerDriveList,Mode=OneWay}" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Label Text="{Binding chepaino}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala19}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala20}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala21}" Style="{StaticResource DetailStyle}" />
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage>
+  <ContentPage Title="危险驾驶5">
+    <StackLayout Orientation="Vertical">
+      <StackLayout Padding="10,5,10,5">
+        <SearchBar Text="{Binding keyValues,Mode=TwoWay}" Placeholder="查询 (车牌)" SearchCommand="{Binding SearchBarCommand}" />
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+        <Label Text="车牌号" Style="{StaticResource HeaderStyle}" />
+        <Label Text="超速报警" Style="{StaticResource HeaderStyle}" />
+        <Label Text="水温报警" Style="{StaticResource HeaderStyle}" />
+        <Label Text="转速报警" Style="{StaticResource HeaderStyle}" />
+      </StackLayout>
+      <ListView ItemsSource="{Binding DangerDriveList,Mode=OneWay}" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Label Text="{Binding chepaino}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala30}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala31}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala32}" Style="{StaticResource DetailStyle}" />
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage>
+  <ContentPage Title="危险驾驶6">
+    <StackLayout Orientation="Vertical">
+      <StackLayout Padding="10,5,10,5">
+        <SearchBar Text="{Binding keyValues,Mode=TwoWay}" Placeholder="查询 (车牌)" SearchCommand="{Binding SearchBarCommand}" />
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+        <Label Text="车牌号" Style="{StaticResource HeaderStyle}" />
+        <Label Text="电压报警" Style="{StaticResource HeaderStyle}" />
+        <Label Text="故障报警" Style="{StaticResource HeaderStyle}" />
+        <Label Text="转弯" Style="{StaticResource HeaderStyle}" />
+      </StackLayout>
+      <ListView ItemsSource="{Binding DangerDriveList,Mode=OneWay}" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Label Text="{Binding chepaino}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala33}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala34}" Style="{StaticResource DetailStyle}" />
+                <Label Text="{Binding Ala35}" Style="{StaticResource DetailStyle}" />
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage>
+  </CarouselPage>
