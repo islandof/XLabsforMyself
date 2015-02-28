@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,8 @@ namespace XLabs.Sample.ViewModel
 {
     public class DangerDriveListViewModel : Forms.Mvvm.ViewModel
     {
+        private List<DangerDriveViewModel> _dangerDrive;
+        private string _keyValues;
 
         public DangerDriveListViewModel()
         {
@@ -40,20 +43,21 @@ namespace XLabs.Sample.ViewModel
         }
         
 
-        public List<DangerDriveViewModel> DangerDriveList { get; set;
-            //get { return GetValue<List<DangerDriveViewModel>>(); }
-            //set { SetValue(value); }
+        public List<DangerDriveViewModel> DangerDriveList
+        {
+            get { return _dangerDrive; }
+            set { SetProperty(ref _dangerDrive, value); }
         }
 
-        public string keyValues { get; set;
-            //get
-            //{
-            //    return GetValue<string>();
-            //}
-            //set
-            //{
-            //    SetValue(value);
-            //}
+        public string keyValues { 
+            get
+            {
+                return _keyValues;
+            }
+            set
+            {
+                SetProperty(ref _keyValues,value);
+            }
         }
 
         public ICommand SearchBarCommand { private set; get; }

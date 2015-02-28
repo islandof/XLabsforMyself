@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using XLabs.Forms.Mvvm;
+using XLabs.Sample.ViewModel;
 
 namespace XLabs.Sample.Pages
 {
@@ -18,7 +19,8 @@ namespace XLabs.Sample.Pages
 
         private void Danger_OnClicked(object sender, EventArgs e)
         {
-            //Navigation.PushAsync(ViewFactory.CreatePage<DangerDriveListViewModel>());
+            Navigation.PushAsync((Page)ViewFactory.CreatePage<DangerDriveListViewModel,Page>());
+            //new NavigationPage((Page) ViewFactory.CreatePage<DangerDriveListViewModel, Page>());
         }
 
         private void Alert_OnClicked(object sender, EventArgs e)

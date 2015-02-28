@@ -40,7 +40,7 @@ namespace XLabs.Sample
             Init();
             _cacheService = Resolver.Resolve<ISimpleCache>();
             var keyValue = _cacheService.Get<string>("USER_ID");
-  			MainPage = keyValue==null ? new NavigationPage(new MainPage()) : new NavigationPage((Page)ViewFactory.CreatePage<LoginViewModel,Page>());
+  			MainPage = keyValue!=null ? new NavigationPage(new MainPage()) : new NavigationPage((Page)ViewFactory.CreatePage<LoginViewModel,Page>());
 
             //MainPage = GetMainPage ();
         }
