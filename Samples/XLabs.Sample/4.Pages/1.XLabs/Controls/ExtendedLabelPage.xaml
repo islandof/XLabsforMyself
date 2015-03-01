@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+			 x:Class="XLabs.Sample.Pages.Controls.ExtendedLabelPage"
+			 Title="Labels">
+	<ContentPage.Content>
+		<!-- Removed scrollview as this makes the Windows Phone not render the font substitutions. This is bug reported to the Xamarin team. 
+        Works on other platforms. !-->
+		<!--<ScrollView> -->
+		<StackLayout x:Name="stkRoot" Padding="0,40,0,0">
+			<controls:ExtendedLabel
+                Text="Plain unspecified Extended Label" HorizontalOptions="StartAndExpand" />
+			<controls:ExtendedLabel
+                FontSize="30"
+                Text="Text with strikethrough"
+                IsStrikeThrough="True"
+                HorizontalOptions="StartAndExpand" />
+      <controls:ExtendedLabel
+                Text="Text with IsUnderline"
+                IsUnderline="True"
+                HorizontalOptions="StartAndExpand" />
+			<controls:ExtendedLabel
+                Text="Text with IsDropShadow"
+                IsDropShadow="True"
+                HorizontalOptions="StartAndExpand" />
+			
+		</StackLayout>
+		<!-- </ScrollView> -->
+	</ContentPage.Content>
+</ContentPage>

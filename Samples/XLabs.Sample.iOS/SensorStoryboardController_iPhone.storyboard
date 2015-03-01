@@ -1,26 +1,87 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
-	<dependencies>
-		<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676" />
-	</dependencies>
-	<scenes>
-		<!--class Prefix:identifier View Controller-->
-		<scene sceneID="ufC-wZ-h7g">
-			<objects>
-				<viewController id="vXZ-lx-hvc" customClass="SensorStoryboardController" sceneMemberID="viewController">
-					<view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-						<rect key="frame" x="0.0" y="0.0" width="320" height="568" />
-						<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES" />
-						<color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite" />
-					</view>
-				</viewController>
-				<placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder" />
-			</objects>
-		</scene>
-	</scenes>
-	<simulatedMetricsContainer key="defaultSimulatedMetrics">
-		<simulatedStatusBarMetrics key="statusBar" />
-		<simulatedOrientationMetrics key="orientation" />
-		<simulatedScreenMetrics key="destination" type="retina4" />
-	</simulatedMetricsContainer>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733.0"/>
+    </dependencies>
+    <scenes>
+        <!--class Prefix:identifier View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="SensorStoryboardController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3"/>
+                        <viewControllerLayoutGuide type="bottom" id="4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
+    <resources>
+        <image name="fonts/fontawesome-webfont.ttf" width="0" height="0"/>
+        <image name="fonts/Open 24 Display St.ttf" width="0" height="0"/>
+        <image name="fonts/Roboto-Light.ttf" width="0" height="0"/>
+        <image name="ad16.jpg" width="152" height="200"/>
+        <image name="alert.ico" width="48" height="48"/>
+        <image name="alert2.ico" width="48" height="48"/>
+        <image name="blackbackground.png" width="64" height="49"/>
+        <image name="bubbles.jpg" width="3264" height="2448"/>
+        <image name="call.ico" width="48" height="48"/>
+        <image name="call2.ico" width="48" height="48"/>
+        <image name="carmanage.ico" width="16" height="16"/>
+        <image name="carsacn.ico" width="48" height="48"/>
+        <image name="carsafe.ico" width="48" height="48"/>
+        <image name="carscan2.ico" width="48" height="48"/>
+        <image name="carscan3.ico" width="48" height="48"/>
+        <image name="chart.ico" width="48" height="48"/>
+        <image name="clock.ico" width="48" height="48"/>
+        <image name="clock2.ico" width="48" height="48"/>
+        <image name="dandrive.ico" width="48" height="48"/>
+        <image name="dandrive2.ico" width="48" height="48"/>
+        <image name="Default-568h.png" width="640" height="1136"/>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="fast.ico" width="48" height="48"/>
+        <image name="gasolin.ico" width="48" height="48"/>
+        <image name="gasolin2.ico" width="48" height="48"/>
+        <image name="Icon-60.png" width="120" height="120"/>
+        <image name="Icon-72.png" width="72" height="72"/>
+        <image name="Icon-76.png" width="76" height="76"/>
+        <image name="Icon-Small-40.png" width="40" height="40"/>
+        <image name="Icon-Small-50.png" width="50" height="50"/>
+        <image name="Icon-Small.png" width="29" height="29"/>
+        <image name="Icon.png" width="57" height="57"/>
+        <image name="icon_facebook.png" width="100" height="100"/>
+        <image name="icon_google.png" width="100" height="100"/>
+        <image name="icon_microsoft.png" width="100" height="100"/>
+        <image name="icon_twitter.png" width="100" height="100"/>
+        <image name="imgNotAvailable.png" width="324" height="324"/>
+        <image name="locate.ico" width="48" height="48"/>
+        <image name="locate2.ico" width="48" height="48"/>
+        <image name="messagecentre.ico" width="16" height="16"/>
+        <image name="monitor.ico" width="16" height="16"/>
+        <image name="panic.jpg" width="300" height="225"/>
+        <image name="people.ico" width="48" height="48"/>
+        <image name="pie30_32.png" width="32" height="32"/>
+        <image name="safe.ico" width="48" height="48"/>
+        <image name="safe2.ico" width="48" height="48"/>
+        <image name="search.ico" width="48" height="48"/>
+        <image name="services1_32.png" width="32" height="32"/>
+        <image name="settings20.png" width="64" height="64"/>
+        <image name="settings20_32.png" width="32" height="32"/>
+        <image name="ToolbarGradient1.png" width="64" height="49"/>
+        <image name="ToolbarGradient2.png" width="64" height="49"/>
+        <image name="trace.ico" width="48" height="48"/>
+        <image name="trace2.ico" width="48" height="48"/>
+        <image name="vehicle.ico" width="48" height="48"/>
+    </resources>
 </document>
