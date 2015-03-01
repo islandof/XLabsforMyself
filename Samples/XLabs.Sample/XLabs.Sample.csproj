@@ -36,248 +36,248 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Model\DangerDrive.cs" />
-    <Compile Include="Model\FormatRows.cs" />
-    <Compile Include="Model\ZhalanAlarm.cs" />
-    <Compile Include="Pages\CarManage.xaml.cs">
+    <Compile Include="1.Model\DangerDrive.cs" />
+    <Compile Include="1.Model\FormatRows.cs" />
+    <Compile Include="1.Model\ZhalanAlarm.cs" />
+    <Compile Include="4.Pages\CarManage.xaml.cs">
       <DependentUpon>CarManage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\CarouselSample.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\CarouselSample.xaml.cs">
       <DependentUpon>CarouselSample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\ButtonGroupPage.cs" />
-    <Compile Include="Pages\Controls\ButtonPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\ButtonGroupPage.cs" />
+    <Compile Include="4.Pages\1.XLabs\Controls\ButtonPage.xaml.cs">
       <DependentUpon>ButtonPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\Charts\BarChartPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\Charts\BarChartPage.xaml.cs">
       <DependentUpon>BarChartPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\Charts\BoundChartPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\Charts\BoundChartPage.xaml.cs">
       <DependentUpon>BoundChartPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\Charts\BoundChartViewModel.cs" />
-    <Compile Include="Pages\Controls\Charts\CombinationPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\Charts\BoundChartViewModel.cs" />
+    <Compile Include="4.Pages\1.XLabs\Controls\Charts\CombinationPage.xaml.cs">
       <DependentUpon>CombinationPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\Charts\LineChartPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\Charts\LineChartPage.xaml.cs">
       <DependentUpon>LineChartPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\Charts\PieChartPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\Charts\PieChartPage.xaml.cs">
       <DependentUpon>PieChartPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\CircleImagePage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\CircleImagePage.xaml.cs">
       <DependentUpon>CircleImagePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\DragPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\DragPage.xaml.cs">
       <DependentUpon>DragPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\DynamicList\BasicList.cs" />
-    <Compile Include="Pages\Controls\DynamicList\DynamicListView.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\DynamicList\BasicList.cs" />
+    <Compile Include="4.Pages\1.XLabs\Controls\DynamicList\DynamicListView.xaml.cs">
       <DependentUpon>DynamicListView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\ExtendedEntryPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\ExtendedEntryPage.xaml.cs">
       <DependentUpon>ExtendedEntryPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\GestureSample.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\GestureSample.xaml.cs">
       <DependentUpon>GestureSample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\PopupPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\PopupPage.xaml.cs">
       <DependentUpon>PopupPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\RadioButtonPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\RadioButtonPage.xaml.cs">
       <DependentUpon>RadioButtonPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\RepeaterViewPage.cs" />
-    <Compile Include="Pages\Controls\ExtendedSliderPage.cs" />
-    <Compile Include="Pages\Controls\SegmentedControlViewPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\RepeaterViewPage.cs" />
+    <Compile Include="4.Pages\1.XLabs\Controls\ExtendedSliderPage.cs" />
+    <Compile Include="4.Pages\1.XLabs\Controls\SegmentedControlViewPage.xaml.cs">
       <DependentUpon>SegmentedControlViewPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\SegmentPage.cs" />
-    <Compile Include="Pages\Controls\WebHybridTestPage.cs" />
-    <Compile Include="Pages\LoginPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\SegmentPage.cs" />
+    <Compile Include="4.Pages\1.XLabs\Controls\WebHybridTestPage.cs" />
+    <Compile Include="4.Pages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\MainExtendPage.cs" />
-    <Compile Include="Pages\MainPage.xaml.cs">
+    <Compile Include="4.Pages\MainExtendPage.cs" />
+    <Compile Include="4.Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\MonitorCentre.xaml.cs">
+    <Compile Include="4.Pages\MonitorCentre.xaml.cs">
       <DependentUpon>MonitorCentre.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Monitor\DangerDriveList.xaml.cs">
+    <Compile Include="4.Pages\Monitor\DangerDriveList.xaml.cs">
       <DependentUpon>DangerDriveList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Monitor\ZhalanAlarmList.xaml.cs">
+    <Compile Include="4.Pages\Monitor\ZhalanAlarmList.xaml.cs">
       <DependentUpon>ZhalanAlarmList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Services\EmailPage.cs" />
-    <Compile Include="Pages\Services\SecureStoragePage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Services\EmailPage.cs" />
+    <Compile Include="4.Pages\1.XLabs\Services\SecureStoragePage.xaml.cs">
       <DependentUpon>SecureStoragePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Services\WaveRecorderPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Services\WaveRecorderPage.xaml.cs">
       <DependentUpon>WaveRecorderPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\WebImagePage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\WebImagePage.xaml.cs">
       <DependentUpon>WebImagePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Services\AbsoluteLayoutWithDisplayInfoPage.cs" />
-    <Compile Include="Pages\XLabsExtendPage.cs" />
-    <Compile Include="ViewModel\ZhalanAlarmListViewModel.cs" />
-    <Compile Include="ViewModel\ZhalanAlarmViewModel.cs" />
+    <Compile Include="4.Pages\1.XLabs\Services\AbsoluteLayoutWithDisplayInfoPage.cs" />
+    <Compile Include="4.Pages\XLabsExtendPage.cs" />
+    <Compile Include="3.ViewModel\ZhalanAlarmListViewModel.cs" />
+    <Compile Include="3.ViewModel\ZhalanAlarmViewModel.cs" />
     <None Include="packages.config" />
-    <None Include="Pages\Services\BluetoothPage.cs" />
-    <Compile Include="Pages\Services\CameraPage.xaml.cs">
+    <None Include="4.Pages\1.XLabs\Services\BluetoothPage.cs" />
+    <Compile Include="4.Pages\1.XLabs\Services\CameraPage.xaml.cs">
       <DependentUpon>CameraPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Services\ExtendedDeviceInfoPage.cs" />
-    <Compile Include="Pages\Services\FontManagerPage.cs" />
-    <Compile Include="Pages\Services\NfcDevicePage.cs" />
-    <Compile Include="Pages\Controls\ValidatorSample.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Services\ExtendedDeviceInfoPage.cs" />
+    <Compile Include="4.Pages\1.XLabs\Services\FontManagerPage.cs" />
+    <Compile Include="4.Pages\1.XLabs\Services\NfcDevicePage.cs" />
+    <Compile Include="4.Pages\1.XLabs\Controls\ValidatorSample.xaml.cs">
       <DependentUpon>ValidatorSample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\WelcomePage.xaml.cs">
+    <Compile Include="4.Pages\WelcomePage.xaml.cs">
       <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
     </Compile>
-    <Compile Include="Pages\Controls\CalendarPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\CalendarPage.xaml.cs">
       <DependentUpon>CalendarPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Services\TextToSpeechPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Services\TextToSpeechPage.xaml.cs">
       <DependentUpon>TextToSpeechPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Services\DanDriveService.cs" />
-    <Compile Include="Services\LoginService.cs" />
-    <Compile Include="Services\ZhalanAlarmService.cs" />
-    <Compile Include="ViewModel\BaseViewModel.cs" />
-    <Compile Include="ViewModel\CameraViewModel.cs" />
-    <Compile Include="ViewModel\DangerDriveListViewModel.cs" />
-    <Compile Include="ViewModel\DangerDriveViewModel.cs" />
-    <Compile Include="ViewModel\GestureSampleVM.cs" />
-    <Compile Include="ViewModel\LoginViewModel.cs" />
-    <Compile Include="ViewModel\MainViewModel.cs" />
-    <Compile Include="ViewModel\RepeaterViewViewModel.cs" />
-    <Compile Include="ViewModel\ViewModelLocator.cs" />
-    <Compile Include="Pages\Controls\ExtendedLabelPage.xaml.cs">
+    <Compile Include="2.Services\DanDriveService.cs" />
+    <Compile Include="2.Services\LoginService.cs" />
+    <Compile Include="2.Services\ZhalanAlarmService.cs" />
+    <Compile Include="3.ViewModel\1.XLabs\BaseViewModel.cs" />
+    <Compile Include="3.ViewModel\1.XLabs\CameraViewModel.cs" />
+    <Compile Include="3.ViewModel\DangerDriveListViewModel.cs" />
+    <Compile Include="3.ViewModel\DangerDriveViewModel.cs" />
+    <Compile Include="3.ViewModel\1.XLabs\GestureSampleVM.cs" />
+    <Compile Include="3.ViewModel\LoginViewModel.cs" />
+    <Compile Include="3.ViewModel\1.XLabs\MainViewModel.cs" />
+    <Compile Include="3.ViewModel\1.XLabs\RepeaterViewViewModel.cs" />
+    <Compile Include="3.ViewModel\1.XLabs\ViewModelLocator.cs" />
+    <Compile Include="4.Pages\1.XLabs\Controls\ExtendedLabelPage.xaml.cs">
       <DependentUpon>ExtendedLabelPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\AutoCompletePage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\AutoCompletePage.xaml.cs">
       <DependentUpon>AutoCompletePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Services\PhoneServicePage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Services\PhoneServicePage.xaml.cs">
       <DependentUpon>PhoneServicePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\MvvmSampleViewModel.cs" />
-    <Compile Include="ViewModel\NewPageViewModel.cs" />
-    <Compile Include="Pages\Mvvm\MvvmSamplePage.xaml.cs">
+    <Compile Include="3.ViewModel\1.XLabs\MvvmSampleViewModel.cs" />
+    <Compile Include="3.ViewModel\1.XLabs\NewPageViewModel.cs" />
+    <Compile Include="4.Pages\1.XLabs\Mvvm\MvvmSamplePage.xaml.cs">
       <DependentUpon>MvvmSamplePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Mvvm\NewPageView.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Mvvm\NewPageView.xaml.cs">
       <DependentUpon>NewPageView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\WaveRecorderViewModel.cs" />
-    <Compile Include="ViewModel\WebHybridViewModel.cs" />
-    <Compile Include="Pages\Mvvm\CanvasWebHybrid.xaml.cs">
+    <Compile Include="3.ViewModel\1.XLabs\WaveRecorderViewModel.cs" />
+    <Compile Include="3.ViewModel\1.XLabs\WebHybridViewModel.cs" />
+    <Compile Include="4.Pages\1.XLabs\Mvvm\CanvasWebHybrid.xaml.cs">
       <DependentUpon>CanvasWebHybrid.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\GeolocatorViewModel.cs" />
-    <Compile Include="Pages\Services\GeolocatorPage.xaml.cs">
+    <Compile Include="3.ViewModel\1.XLabs\GeolocatorViewModel.cs" />
+    <Compile Include="4.Pages\1.XLabs\Services\GeolocatorPage.xaml.cs">
       <DependentUpon>GeolocatorPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Services\AcceleratorSensorPage.cs" />
-    <Compile Include="Pages\Services\CacheServicePage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Services\AcceleratorSensorPage.cs" />
+    <Compile Include="4.Pages\1.XLabs\Services\CacheServicePage.xaml.cs">
       <DependentUpon>CacheServicePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\CacheServiceViewModel.cs" />
-    <Compile Include="Pages\Controls\ExtendedCellPage.xaml.cs">
+    <Compile Include="3.ViewModel\1.XLabs\CacheServiceViewModel.cs" />
+    <Compile Include="4.Pages\1.XLabs\Controls\ExtendedCellPage.xaml.cs">
       <DependentUpon>ExtendedCellPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Services\SoundPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Services\SoundPage.xaml.cs">
       <DependentUpon>SoundPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\SoundServiceViewModel.cs" />
-    <Compile Include="Pages\Controls\GridViewPage.xaml.cs">
+    <Compile Include="3.ViewModel\1.XLabs\SoundServiceViewModel.cs" />
+    <Compile Include="4.Pages\1.XLabs\Controls\GridViewPage.xaml.cs">
       <DependentUpon>GridViewPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\ExtendedScrollView.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\ExtendedScrollView.xaml.cs">
       <DependentUpon>ExtendedScrollView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\CheckBoxPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\CheckBoxPage.xaml.cs">
       <DependentUpon>CheckBoxPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\ImageGalleryPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\ImageGalleryPage.xaml.cs">
       <DependentUpon>ImageGalleryPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\CameraViewPage.xaml.cs">
+    <Compile Include="4.Pages\1.XLabs\Controls\CameraViewPage.xaml.cs">
       <DependentUpon>CameraViewPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Controls\SeparatorPage.cs" />
-    <Compile Include="ViewModel\AutoCompleteViewModel.cs" />
-    <Compile Include="Model\TestModel.cs" />
+    <Compile Include="4.Pages\1.XLabs\Controls\SeparatorPage.cs" />
+    <Compile Include="3.ViewModel\1.XLabs\AutoCompleteViewModel.cs" />
+    <Compile Include="1.Model\TestModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Services\CameraPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Services\CameraPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Services\CacheServicePage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Services\CacheServicePage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Controls\ExtendedCellPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\ExtendedCellPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Services\SoundPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Services\SoundPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Controls\GridViewPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\GridViewPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <LogicalName>GridViewPage.xaml</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Controls\ExtendedScrollView.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\ExtendedScrollView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <LogicalName>ExtendedScrollView.xaml</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Controls\CheckBoxPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\CheckBoxPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <LogicalName>CheckBoxPage.xaml</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Controls\ImageGalleryPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\ImageGalleryPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <LogicalName>ImageGallery.xaml</LogicalName>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Controls\CameraViewPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\CameraViewPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\CalendarPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\CalendarPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Services\TextToSpeechPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Services\TextToSpeechPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Controls\ExtendedLabelPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\ExtendedLabelPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Controls\AutoCompletePage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\AutoCompletePage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Services\PhoneServicePage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Services\PhoneServicePage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Mvvm\MvvmSamplePage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Mvvm\MvvmSamplePage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Mvvm\NewPageView.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Mvvm\NewPageView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Mvvm\CanvasWebHybrid.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Mvvm\CanvasWebHybrid.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Services\GeolocatorPage.xaml" />
+    <EmbeddedResource Include="4.Pages\1.XLabs\Services\GeolocatorPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Caching\XLabs.Caching\XLabs.Caching.csproj">
@@ -306,7 +306,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\ButtonPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\ButtonPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -315,91 +315,91 @@
     <None Include="Settings.StyleCop" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\WebImagePage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\WebImagePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\DynamicList\DynamicListView.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\DynamicList\DynamicListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\Charts\CombinationPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\Charts\CombinationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\Charts\LineChartPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\Charts\LineChartPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\Charts\BarChartPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\Charts\BarChartPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\Charts\PieChartPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\Charts\PieChartPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\Charts\BoundChartPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\Charts\BoundChartPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\PopupPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\PopupPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\ExtendedEntryPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\ExtendedEntryPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Services\WaveRecorderPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Services\WaveRecorderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\CircleImagePage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\CircleImagePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\SegmentedControlViewPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\SegmentedControlViewPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\GestureSample.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\GestureSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\ValidatorSample.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\ValidatorSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\CarouselSample.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\CarouselSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -428,7 +428,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\RadioButtonPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\RadioButtonPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -444,55 +444,55 @@
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <Import Project="..\..\packages\Xamarin.Forms.1.3.2.6299-pre1\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.3.2.6299-pre1\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Services\SecureStoragePage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Services\SecureStoragePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Controls\DragPage.xaml">
+    <EmbeddedResource Include="4.Pages\1.XLabs\Controls\DragPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\LoginPage.xaml">
+    <EmbeddedResource Include="4.Pages\LoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\MainPage.xaml">
+    <EmbeddedResource Include="4.Pages\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\MonitorCentre.xaml">
+    <EmbeddedResource Include="4.Pages\MonitorCentre.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\CarManage.xaml">
+    <EmbeddedResource Include="4.Pages\CarManage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\WelcomePage.xaml">
+    <EmbeddedResource Include="4.Pages\WelcomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Monitor\ZhalanAlarmList.xaml">
+    <EmbeddedResource Include="4.Pages\Monitor\ZhalanAlarmList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Monitor\DangerDriveList.xaml">
+    <EmbeddedResource Include="4.Pages\Monitor\DangerDriveList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

@@ -33,8 +33,7 @@
     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
       <Label Text="车牌号" Style="{StaticResource HeaderStyle}" />
       <Label Text="发生时间" Style="{StaticResource HeaderStyle}" />
-      <Label Text="栅栏名字" Style="{StaticResource HeaderStyle}" />
-      <Label Text="条件" Style="{StaticResource HeaderStyle}" />
+      <Label Text="栅栏名字" Style="{StaticResource HeaderStyle}" />      
     </StackLayout>
     <ListView ItemsSource="{Binding ZhalanAlarmList,Mode=OneWay}" HasUnevenRows="True">
       <ListView.ItemTemplate>
@@ -43,8 +42,8 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
               <Label Text="{Binding chepaino,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="Start"/>
               <Label Text="{Binding dthappen,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="Center"/>
-              <Label Text="{Binding zhalanname,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="Center"/>
-              <Label Text="{Binding condition,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="End"/>
+              <Label Text="{Binding zhalanname,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="End"/>
+              
             </StackLayout>
           </ViewCell>
         </DataTemplate>

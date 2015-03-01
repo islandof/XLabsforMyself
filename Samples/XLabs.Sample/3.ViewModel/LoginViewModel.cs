@@ -34,6 +34,7 @@ namespace XLabs.Sample.ViewModel
                     _cacheService.Add("USER_ID", result.USER_ID);
 
                     await Navigation.PushAsync(new MainExtendPage());
+
                     //await Navigation.PushModalAsync(new MainPage());
                 }
                 else

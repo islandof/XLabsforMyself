@@ -5,7 +5,7 @@
              Title="登陆"
              BackgroundColor="White">
   <StackLayout VerticalOptions="FillAndExpand" Padding="50">
-    <Frame Padding="75">
+    <Frame Padding="0,75,0,75">
       <Label Text="登陆"
       Font="Bold,Large"
       HorizontalOptions="Center">
