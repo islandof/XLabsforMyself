@@ -60,7 +60,7 @@ namespace XLabs.Sample
             ViewFactory.Register<WaveRecorderPage, WaveRecorderViewModel>();
             ViewFactory.Register<LoginPage, LoginViewModel>();
             ViewFactory.Register<DangerDriveList, DangerDriveListViewModel>();
-            //ViewFactory.Register<ZhalanAlarmList, ZhalanAlarmListViewModel>();
+            ViewFactory.Register<ZhalanAlarmList, ZhalanAlarmListViewModel>();
 
             var app = Resolver.Resolve<IXFormsApp>();
             if (app == null)

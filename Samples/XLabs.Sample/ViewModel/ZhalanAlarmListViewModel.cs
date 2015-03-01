@@ -1,22 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Labs.Sample;
+using XLabs.Sample.Model;
 using XLabs.Sample.Services;
 
 namespace XLabs.Sample.ViewModel
 {
-    public class DangerDriveListViewModel : Forms.Mvvm.ViewModel
+    public class ZhalanAlarmListViewModel : Forms.Mvvm.ViewModel
     {
-        private List<DangerDriveViewModel> _dangerDriveList;
+        private List<ZhalanAlarmViewModel> _zhalanAlarmList;
         private string _keyValues;
 
-        public DangerDriveListViewModel()
+        public ZhalanAlarmListViewModel()
         {
             //TaskDangerDriveList = new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""));
             //DangerDriveList = (new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""))).Result;
@@ -24,39 +24,40 @@ namespace XLabs.Sample.ViewModel
             Firstload();
             this.SearchBarCommand = new Command(async (nothing) =>
             {
-                DangerDriveList = await GetData(keyValues);
+                ZhalanAlarmList = await GetData(keyValues);
 
             });
         }
 
         private async void Firstload()
         {
-            DangerDriveList = await GetData("");
+            ZhalanAlarmList = await GetData("");
         }
 
-        private async Task<List<DangerDriveViewModel>> GetData(string keyValues)
+        private async Task<List<ZhalanAlarmViewModel>> GetData(string keyValues)
         {
-            var _dangerDriveService = new DanDriveService();
-            var result = await _dangerDriveService.GetDangerDriveList(keyValues);
-            return result.Select(n => new DangerDriveViewModel(n)).ToList();
+            var _service = new ZhalanAlarmService();
+            var result = await _service.GetZhalanAlarmList(keyValues);
+            return result.Select(n => new ZhalanAlarmViewModel(n)).ToList();
             //return result;
         }
-        
 
-        public List<DangerDriveViewModel> DangerDriveList
+
+        public List<ZhalanAlarmViewModel> ZhalanAlarmList
         {
-            get { return _dangerDriveList; }
-            set { SetProperty(ref _dangerDriveList, value); }
+            get { return _zhalanAlarmList; }
+            set { SetProperty(ref _zhalanAlarmList, value); }
         }
 
-        public string keyValues { 
+        public string keyValues
+        {
             get
             {
                 return _keyValues;
             }
             set
             {
-                SetProperty(ref _keyValues,value);
+                SetProperty(ref _keyValues, value);
             }
         }
 

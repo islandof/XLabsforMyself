@@ -106,6 +106,9 @@
     <Compile Include="Pages\Monitor\DangerDriveList.xaml.cs">
       <DependentUpon>DangerDriveList.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Monitor\ZhalanAlarmList.xaml.cs">
+      <DependentUpon>ZhalanAlarmList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Services\EmailPage.cs" />
     <Compile Include="Pages\Services\SecureStoragePage.xaml.cs">
       <DependentUpon>SecureStoragePage.xaml</DependentUpon>
@@ -117,6 +120,8 @@
       <DependentUpon>WebImagePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Services\AbsoluteLayoutWithDisplayInfoPage.cs" />
+    <Compile Include="ViewModel\ZhalanAlarmListViewModel.cs" />
+    <Compile Include="ViewModel\ZhalanAlarmViewModel.cs" />
     <None Include="packages.config" />
     <None Include="Pages\Services\BluetoothPage.cs" />
     <Compile Include="Pages\Services\CameraPage.xaml.cs">
@@ -478,7 +483,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\Monitor\ZhalanAlarmList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\Monitor\DangerDriveList.xaml">
       <SubType>Designer</SubType>
