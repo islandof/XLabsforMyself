@@ -97,6 +97,7 @@
     <Compile Include="Pages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\MainExtendPage.cs" />
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -120,6 +121,7 @@
       <DependentUpon>WebImagePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Services\AbsoluteLayoutWithDisplayInfoPage.cs" />
+    <Compile Include="Pages\XLabsExtendPage.cs" />
     <Compile Include="ViewModel\ZhalanAlarmListViewModel.cs" />
     <Compile Include="ViewModel\ZhalanAlarmViewModel.cs" />
     <None Include="packages.config" />

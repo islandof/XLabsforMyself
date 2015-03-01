@@ -46,7 +46,7 @@ namespace XLabs.Sample.Droid
     /// <summary>
     /// Class MainActivity.
     /// </summary>
-    [Activity(Label = "Xamarin.Forms.Labs.Sample.Droid", MainLauncher = true,
+    [Activity(Label = "TesCar", MainLauncher = true,
         ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class MainActivity : XFormsApplicationDroid
     {

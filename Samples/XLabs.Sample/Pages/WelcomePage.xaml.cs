@@ -14,5 +14,10 @@ namespace XLabs.Sample.Pages
         {
             InitializeComponent();
         }
+
+        private void OnButtonClicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new XLabsExtendPage());
+        }
     }
 }
