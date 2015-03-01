@@ -1,123 +1,67 @@
-﻿using XLabs.Caching;
-using XLabs.Forms.Services;
-using XLabs.Platform.Services;
-using XLabs.Sample.Pages;
-using XLabs.Sample.Pages.Monitor;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+using XLabs.Forms.Controls;
+using XLabs.Forms.Mvvm;
+using XLabs.Ioc;
+using XLabs.Platform.Device;
+using XLabs.Sample.Pages.Controls;
+using XLabs.Sample.Pages.Controls.Charts;
+using XLabs.Sample.Pages.Controls.DynamicList;
+using XLabs.Sample.Pages.Mvvm;
+using XLabs.Sample.Pages.Services;
+using XLabs.Sample.ViewModel;
 
-namespace XLabs.Sample
+namespace XLabs.Sample.Pages
 {
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Diagnostics;
-    using System.Linq;
-    using System.Reflection;
-    using System.Threading.Tasks;
-
-    using Xamarin.Forms;
-
-    using XLabs.Forms.Controls;
-    using XLabs.Forms.Mvvm;
-    using XLabs.Ioc;
-    using XLabs.Platform.Device;
-    using XLabs.Platform.Mvvm;
-    using XLabs.Sample.Pages.Controls;
-    using XLabs.Sample.Pages.Controls.Charts;
-    using XLabs.Sample.Pages.Controls.DynamicList;
-    using XLabs.Sample.Pages.Mvvm;
-    using XLabs.Sample.Pages.Services;
-    using XLabs.Sample.ViewModel;
-
-    /// <summary>
-    /// Class App.
-    /// </summary>
-    public class App : Application
+    class XLabsExtendPage : ExtendedTabbedPage
     {
-        private readonly ISimpleCache _cacheService;
-
-        public App ()
+        public XLabsExtendPage()
         {
-            Init();
-            _cacheService = Resolver.Resolve<ISimpleCache>();
-            var keyValue = _cacheService.Get<string>("USER_ID");
-  			MainPage = keyValue!=null ? new NavigationPage(new MainExtendPage()) : new NavigationPage((Page)ViewFactory.CreatePage<LoginViewModel,Page>());
+            //var mainTab = new ExtendedTabbedPage()
+            //{
+            //    Title = "Xamarin Forms Labs",
+            //    SwipeEnabled = true,
+            //    TintColor = Color.White,
+            //    BarTintColor = Color.Blue,
+            //    Badges = { "1", "2", "3" },
+            //    TabBarBackgroundImage = "ToolbarGradient2.png",
+            //    TabBarSelectedImage = "blackbackground.png",
+            //};
 
-            //MainPage = GetMainPage ();
-        }
-        /// <summary>
-        /// Initializes the application.
-        /// </summary>
-        public static void Init()
-        {
-            // Register our views with our view models
-            ViewFactory.Register<MvvmSamplePage, MvvmSampleViewModel>();
-            ViewFactory.Register<NewPageView, NewPageViewModel>();
-            ViewFactory.Register<GeolocatorPage, GeolocatorViewModel>();
-            ViewFactory.Register<CameraPage, CameraViewModel>();
-            ViewFactory.Register<CacheServicePage, CacheServiceViewModel>();
-            ViewFactory.Register<SoundPage, SoundServiceViewModel>();
-            ViewFactory.Register<RepeaterViewPage, RepeaterViewViewModel>();
-            ViewFactory.Register<WaveRecorderPage, WaveRecorderViewModel>();
-            ViewFactory.Register<LoginPage, LoginViewModel>();
-            ViewFactory.Register<DangerDriveList, DangerDriveListViewModel>();
-            ViewFactory.Register<ZhalanAlarmList, ZhalanAlarmListViewModel>();
+            //var mainPage = new NavigationPage(mainTab);
 
-            var app = Resolver.Resolve<IXFormsApp>();
-            if (app == null)
-            {
-                return;
-            }
+            //Resolver.Resolve<IDependencyContainer>()
+            //    .Register<INavigationService>(t => new NavigationService(mainPage.Navigation));
 
-            app.Closing += (o, e) => Debug.WriteLine("Application Closing");
-            app.Error += (o, e) => Debug.WriteLine("Application Error");
-            app.Initialize += (o, e) => Debug.WriteLine("Application Initialized");
-            app.Resumed += (o, e) => Debug.WriteLine("Application Resumed");
-            app.Rotation += (o, e) => Debug.WriteLine("Application Rotated");
-            app.Startup += (o, e) => Debug.WriteLine("Application Startup");
-            app.Suspended += (o, e) => Debug.WriteLine("Application Suspended");
-        }
+            //this.CurrentPageChanged += () => Debug.WriteLine("ExtendedTabbedPage CurrentPageChanged {0}", mainTab.CurrentPage.Title);
 
-        /// <summary>
-        /// Gets the main page.
-        /// </summary>
-        /// <returns>The Main Page.</returns>
-        public static Page GetMainPage()
-        {
-            
-
-            #region 虚线
-            var mainTab = new ExtendedTabbedPage()
-            {
-                Title = "Xamarin Forms Labs",
-                SwipeEnabled = true,
-                TintColor = Color.White,
-                BarTintColor = Color.Blue,
-                Badges = { "1", "2", "3" },
-                TabBarBackgroundImage = "ToolbarGradient2.png",
-                TabBarSelectedImage = "blackbackground.png",
-            };
-
-            var mainPage = new NavigationPage(mainTab);
-
-            Resolver.Resolve<IDependencyContainer>()
-                .Register<INavigationService>(t => new NavigationService(mainPage.Navigation));
-
-            mainTab.CurrentPageChanged += () => Debug.WriteLine("ExtendedTabbedPage CurrentPageChanged {0}", mainTab.CurrentPage.Title);
-
-            var controls = GetControlsPage(mainPage);
-            var services = GetServicesPage(mainPage);
-            var charts = GetChartingPage(mainPage);
+            var controls = GetControlsPage(this);
+            var services = GetServicesPage(this);
+            var charts = GetChartingPage(this);
 
             var mvvm = ViewFactory.CreatePage<MvvmSampleViewModel, Page>();
 
-            mainTab.Children.Add(controls);
-            mainTab.Children.Add(services);
-            mainTab.Children.Add(charts);
-            mainTab.Children.Add(mvvm as Page);
+            this.Children.Add(controls);
+            this.Children.Add(services);
+            this.Children.Add(charts);
+            this.Children.Add(mvvm as Page);
+            this.Badges.Add("1");
+            this.Badges.Add("2");
+            this.Badges.Add("3");
+            this.Title = "Xamarin Forms Labs";
+            this.SwipeEnabled = true;
+            this.TintColor = Color.White;
+            this.BarTintColor = Color.Blue;
+            this.TabBarBackgroundImage = "ToolbarGradient2.png";
+            this.TabBarSelectedImage = "blackbackground.png";
 
-            #endregion
-            //var mainPage = new NavigationPage((Page)ViewFactory.CreatePage<LoginViewModel, Page>());
-            return mainPage;
+
         }
 
         /// <summary>
@@ -319,7 +263,7 @@ namespace XLabs.Sample
                 {
                     case TargetPlatform.Android:
                     case TargetPlatform.iOS:
-                        var item = (DictionaryEntry) e.SelectedItem;
+                        var item = (DictionaryEntry)e.SelectedItem;
                         result = (Type)item.Value;
                         break;
                     case TargetPlatform.WinPhone:
@@ -356,6 +300,6 @@ namespace XLabs.Sample
                 break;
             }
         }
+
     }
 }
-

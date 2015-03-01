@@ -9,23 +9,13 @@ using XLabs.Forms.Controls;
 
 namespace XLabs.Sample.Pages
 {
-    public partial class MainPage : ExtendedTabbedPage
+    public partial class MainPage : TabbedPage
     {
-        List<string> badges;
-
+        
         public MainPage()
-        {
-            Init();
+        {            
             InitializeComponent();
         }
-        
-        private void Init()
-        {            
-            badges.Add("0");
-            badges.Add("0");
-            badges.Add("3");
-
-            EtTabbedPage.Badges = badges;
-        }
+                
     }
 }
