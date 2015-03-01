@@ -1,12 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
              x:Class="XLabs.Sample.Pages.WelcomePage">
   <StackLayout
-    VerticalOptions="Center">
-    <Frame>
-      <Label Text="欢迎来到腾兴车联" Font="Bold,Large" HorizontalOptions="Center"/>
-    </Frame>
-    <Button Text="跳转到XLabsDemo库" Clicked="OnButtonClicked" HorizontalOptions="Center"/>
+    VerticalOptions="Start">
+    <StackLayout x:Name="stkRoot" Padding="0,0,0,0">
+      <controls:ExtendedLabel
+                Text="陈红伟提交用车申请：由于有业务要和客户约谈，申请2月30号下午使用车牌粤B14152奥迪A6汽车" HorizontalOptions="StartAndExpand" 
+                FontSize = "12"/>
+      <controls:ExtendedLabel                
+                Text="粤B28263汽车自检报警：
+汽车故障：P1024燃油压力调节器阀-N276开路
+汽车故障：P1319爆震传感器（KS1）电路-G61对地短路
+4S店预约电话xxxxxxx-xxxx"
+                IsStrikeThrough="True"
+                HorizontalOptions="StartAndExpand"
+                FontSize = "12"/>
+      <controls:ExtendedLabel
+                Text="粤B28356油耗异常：粤B28356于2月15号至今，油耗明显高于均值水平，请知悉"                
+                HorizontalOptions="StartAndExpand" 
+                FontSize = "12"/>
+      <controls:ExtendedLabel
+                Text="软件已经出新版本了，请及时下载"
+                IsDropShadow="True"
+                HorizontalOptions="StartAndExpand" 
+                FontSize = "12"/>
+      
+    </StackLayout>
+    <Button Text="跳转到XLabsDemo库" Clicked="OnButtonClicked" HorizontalOptions="StartAndExpand" FontSize="12"/>
+    
   </StackLayout>
 </ContentPage>
