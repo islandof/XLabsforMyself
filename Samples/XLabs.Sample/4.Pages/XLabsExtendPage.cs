@@ -51,9 +51,9 @@ namespace XLabs.Sample.Pages
             this.Children.Add(services);
             this.Children.Add(charts);
             this.Children.Add(mvvm as Page);
-            this.Badges.Add("1");
-            this.Badges.Add("2");
-            this.Badges.Add("3");
+            //this.Badges.Add("1");
+            //this.Badges.Add("2");
+            //this.Badges.Add("3");
             this.Title = "Xamarin Forms Labs";
             this.SwipeEnabled = true;
             this.TintColor = Color.White;

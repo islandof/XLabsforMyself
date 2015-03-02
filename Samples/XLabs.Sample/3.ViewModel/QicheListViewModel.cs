@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Labs.Sample;
+using XLabs.Forms.Mvvm;
 using XLabs.Sample.Model;
+using XLabs.Sample.Pages.Manage;
 using XLabs.Sample.Services;
 
 namespace XLabs.Sample.ViewModel
@@ -14,7 +16,7 @@ namespace XLabs.Sample.ViewModel
     public class QicheListViewModel : Forms.Mvvm.ViewModel
     {
         public ICommand SearchBarCommand { private set; get; }
-        public ICommand NavigateToDetail { private set; get; }
+        
         private List<QicheViewModel> _qicheList;
         private string _keyValues;
 
@@ -29,10 +31,12 @@ namespace XLabs.Sample.ViewModel
                 QicheList = await GetData(keyValues);
 
             });
-            this.NavigateToDetail = new Command(async (nothing) =>
-            {
-                
-            });
+            MessagingCenter.Subscribe<QicheViewModel>(this, "", NavigateToDetail);
+        }
+
+        private async void NavigateToDetail(QicheViewModel item)
+        {
+            await Navigation.PushAsync(new QichePage { Title = item.chepaino + "详细信息", BindingContext = item });
         }
 
         private async void Firstload()

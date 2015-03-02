@@ -44,6 +44,9 @@
     <Compile Include="3.ViewModel\SijiViewModel.cs" />
     <Compile Include="3.ViewModel\QicheViewModel.cs" />
     <Compile Include="4.Pages\Manage\ChartsListPage.cs" />
+    <Compile Include="4.Pages\Manage\QichePage.xaml.cs">
+      <DependentUpon>QichePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="4.Pages\Manage\QicheList.xaml.cs">
       <DependentUpon>QicheList.xaml</DependentUpon>
     </Compile>
@@ -511,6 +514,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="4.Pages\Manage\QicheList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="4.Pages\Manage\QichePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

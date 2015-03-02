@@ -39,8 +39,7 @@
           <ImageCell ImageSource ="nocar.png"
                      Text="{Binding chepaino,Mode=OneWay}"
                      Detail="{Binding stylename,Mode=OneWay}"
-                     Command="{Binding NavigateToDetail}"
-                     CommandParameter="{Binding qicheid,Mode=OneWay}" />
+                     Command="{Binding NavigateToDetail}" />
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>  
