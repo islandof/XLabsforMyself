@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XLabs.Sample.Pages.Manage.QichePage">
+  <ScrollView>
+    <StackLayout VerticalOptions="FillAndExpand" Padding="50">
+      <Label Text="{Binding chepaino}"
+        HorizontalOptions="Center"
+        Font="Bold,Large">
+        <Label.TextColor>
+          <OnPlatform x:TypeArguments="Color"
+             iOS="Accent"
+             WinPhone="Accent"
+             Android="#afcca6" />
+        </Label.TextColor>
+      </Label>
+
+      <Image Aspect="AspectFill"
+             HorizontalOptions="FillAndExpand"
+             Source="nocar.png" />
+
+      <Label Text="{Binding stylename}"
+        HorizontalOptions="Start"
+        Font="Medium" />
+
+      <Label Text="{Binding sijiname}"
+        HorizontalOptions="Start"
+        Font="Bold,Medium" />
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Xamarin.Forms;
 using Xamarin.Forms.Labs.Sample;
-using XLabs.Sample.Model;
+using XLabs.Forms.Mvvm;
+using XLabs.Sample.Pages.Manage;
+using Qiche = XLabs.Sample.Model.Qiche;
 
 namespace XLabs.Sample.ViewModel
 {
     public class QicheViewModel : Forms.Mvvm.ViewModel
     {
+        public ICommand NavigateToDetail { private set; get; }
 
         public QicheViewModel(Qiche item)
         {
@@ -38,6 +43,8 @@ namespace XLabs.Sample.ViewModel
             ownercompanyid = item.ownercompanyid;
             ownercompanyname = item.ownercompanyname;
             lastactiontime = item.lastactiontime;
+
+            this.NavigateToDetail = new Command(() => MessagingCenter.Send(this, ""));
             
         }
 
