@@ -2,19 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
-             x:Class="XLabs.Sample.Pages.Manage.QichePage">
+             x:Class="XLabs.Sample._4.Pages.Manage.SijiPage">
   <ContentPage.Resources>
   <ResourceDictionary>
-  <OnPlatform x:Key="SepColor" x:TypeArguments="Color">
-    <OnPlatform.iOS>Black</OnPlatform.iOS>
-    <OnPlatform.Android>White</OnPlatform.Android>
-    <OnPlatform.WinPhone>White</OnPlatform.WinPhone>
-  </OnPlatform>
+    <OnPlatform x:Key="SepColor" x:TypeArguments="Color">
+      <OnPlatform.iOS>Black</OnPlatform.iOS>
+      <OnPlatform.Android>White</OnPlatform.Android>
+      <OnPlatform.WinPhone>White</OnPlatform.WinPhone>
+    </OnPlatform>
   </ResourceDictionary>
   </ContentPage.Resources>
   <ScrollView>
     <StackLayout VerticalOptions="FillAndExpand" Padding="50">
-      <Label Text="{Binding chepaino}"
+      <Label Text="{Binding sijiname}"
         HorizontalOptions="Center"
         Font="Bold,Large">
         <Label.TextColor>
@@ -27,22 +27,11 @@
       <controls:Separator Color="{StaticResource SepColor}"/>
       <Image Aspect="AspectFill"
              HorizontalOptions="FillAndExpand"
-             Source="nocar.png" />
-      <controls:Separator Color="{StaticResource SepColor}"/>
-      <Label Text="{Binding stylename}"
-        HorizontalOptions="Start"
-        Font="Medium" />
-      <controls:Separator Color="{StaticResource SepColor}"/>
+             Source="nouser.png" />
+      <controls:Separator Color="{StaticResource SepColor}"/>      
       <StackLayout Orientation="Horizontal">
-        <Label Text="司机：" HorizontalOptions="Start"/>
-        <Label Text="{Binding sijiname}"
-          HorizontalOptions="Start"
-          Font="Bold,Medium" />
-      </StackLayout>
-      <controls:Separator Color="{StaticResource SepColor}"/>
-      <StackLayout Orientation="Horizontal">
-        <Label Text="VIN：" HorizontalOptions="Start"/>
-        <Label Text="{Binding vin}"
+        <Label Text="电话：" HorizontalOptions="Start"/>
+        <Label Text="{Binding lianxidianhua}"
           HorizontalOptions="Start"
           Font="Bold,Medium" />
       </StackLayout>

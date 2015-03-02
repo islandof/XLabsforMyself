@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XLabs.Sample.Pages.Monitor.DangerDriveList" Title="危险驾驶">
+             x:Class="XLabs.Sample.Pages.Monitor.DangerDriveList" 
+             Title="危险驾驶">
   <CarouselPage.Resources>
     <ResourceDictionary>
       <Style x:Key="HeaderStyle" TargetType="Label">

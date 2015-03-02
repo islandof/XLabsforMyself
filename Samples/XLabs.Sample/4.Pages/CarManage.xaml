@@ -41,7 +41,7 @@
       <Label Text="车辆管理"  Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
     <StackLayout Grid.Row="0" Grid.Column="1"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="people.ico" Style="{StaticResource LayoutButtonStyle}" />
+      <Button Image="people.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Driver_OnClicked"/>
       <Label Text="驾驶员管理" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
     <StackLayout Grid.Row="0" Grid.Column="2"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >

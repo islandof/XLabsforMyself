@@ -4,6 +4,7 @@ using XLabs.Platform.Services;
 using XLabs.Sample.Pages;
 using XLabs.Sample.Pages.Manage;
 using XLabs.Sample.Pages.Monitor;
+using XLabs.Sample._4.Pages.Manage;
 
 namespace XLabs.Sample
 {
@@ -63,7 +64,7 @@ namespace XLabs.Sample
             ViewFactory.Register<DangerDriveList, DangerDriveListViewModel>();
             ViewFactory.Register<ZhalanAlarmList, ZhalanAlarmListViewModel>();
             ViewFactory.Register<QicheList,QicheListViewModel>();
-            ViewFactory.Register<QichePage,QicheViewModel>();
+            ViewFactory.Register<SijiList,SijiListViewModel>();
 
             var app = Resolver.Resolve<IXFormsApp>();
             if (app == null)

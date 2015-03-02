@@ -36,7 +36,7 @@ namespace XLabs.Sample.ViewModel
 
         private async void NavigateToDetail(QicheViewModel item)
         {
-            await Navigation.PushAsync(new QichePage { Title = item.chepaino + "详细信息", BindingContext = item });
+            await Navigation.PushAsync(new QichePage { Title = item.chepaino + "的详细信息", BindingContext = item });
         }
 
         private async void Firstload()

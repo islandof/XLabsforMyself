@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Xamarin.Forms;
 using Xamarin.Forms.Labs.Sample;
 using XLabs.Sample.Model;
 
@@ -10,6 +12,7 @@ namespace XLabs.Sample.ViewModel
 {
     public class SijiViewModel : Forms.Mvvm.ViewModel
     {
+        public ICommand NavigateToDetail { private set; get; }
 
         public SijiViewModel(Siji item)
         {
@@ -22,7 +25,9 @@ namespace XLabs.Sample.ViewModel
             companyid = item.companyid;
             ownercompanyid = item.ownercompanyid;
             ownercompanyname = item.ownercompanyname;
-            
+
+            this.NavigateToDetail = new Command(() => MessagingCenter.Send(this, ""));
+
         }
 
         public string sijiid { get; set; }
