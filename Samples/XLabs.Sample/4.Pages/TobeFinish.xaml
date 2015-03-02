@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XLabs.Sample.Pages.TobeFinish"
+             Title="有待开发">
+  <StackLayout Orientation="Vertical" Padding="50">
+  <Image Aspect="AspectFit"
+             HorizontalOptions="CenterAndExpand"
+             Source="tobefinish.png" />
+	<Label Text="正在开发,敬请期待" VerticalOptions="End" HorizontalOptions="Center" FontSize="30"/>
+  </StackLayout>
+</ContentPage>

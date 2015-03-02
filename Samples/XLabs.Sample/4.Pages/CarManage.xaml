@@ -45,33 +45,33 @@
       <Label Text="驾驶员管理" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
     <StackLayout Grid.Row="0" Grid.Column="2"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="search.ico" Style="{StaticResource LayoutButtonStyle}" />
+      <Button Image="search.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Tobefinish_OnClicked"/>
       <Label Text="调度信息" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
 
     <StackLayout Grid.Row="1" Grid.Column="0"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="clock.ico" Style="{StaticResource LayoutButtonStyle}"/>
+      <Button Image="clock.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Tobefinish_OnClicked"/>
       <Label Text="违章记录" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
     <StackLayout Grid.Row="1" Grid.Column="1"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="carscan3.ico" Style="{StaticResource LayoutButtonStyle}"/>
+      <Button Image="carscan3.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Tobefinish_OnClicked"/>
       <Label Text="维修记录" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
     <StackLayout Grid.Row="1" Grid.Column="2"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="alert2.ico" Style="{StaticResource LayoutButtonStyle}"/>
+      <Button Image="alert2.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Tobefinish_OnClicked"/>
       <Label Text="事故查询" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
 
     <StackLayout Grid.Row="2" Grid.Column="0"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="gasolin.ico" Style="{StaticResource LayoutButtonStyle}"/>
+      <Button Image="gasolin.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Tobefinish_OnClicked"/>
       <Label Text="加油记录" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
     <StackLayout Grid.Row="2" Grid.Column="1"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="carsafe.ico" Style="{StaticResource LayoutButtonStyle}"/>
+      <Button Image="carsafe.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Tobefinish_OnClicked"/>
       <Label Text="车辆保险" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
     <StackLayout Grid.Row="2" Grid.Column="2"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="carsacn.ico" Style="{StaticResource LayoutButtonStyle}"/>
+      <Button Image="carsacn.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Tobefinish_OnClicked"/>
       <Label Text="预约维修" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
     

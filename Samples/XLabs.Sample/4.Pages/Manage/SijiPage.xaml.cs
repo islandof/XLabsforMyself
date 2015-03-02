@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace XLabs.Sample._4.Pages.Manage
+namespace XLabs.Sample.Pages.Manage
 {
     public partial class SijiPage : ContentPage
     {

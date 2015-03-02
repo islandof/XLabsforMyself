@@ -286,16 +286,19 @@ namespace XLabs.Sample.Droid
 			public const int settings20_32 = 2130837543;
 			
 			// aapt resource value: 0x7f020028
-			public const int trace = 2130837544;
+			public const int tobefinish = 2130837544;
 			
 			// aapt resource value: 0x7f020029
-			public const int trace2 = 2130837545;
+			public const int trace = 2130837545;
 			
 			// aapt resource value: 0x7f02002a
-			public const int valid = 2130837546;
+			public const int trace2 = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public const int vehicle = 2130837547;
+			public const int valid = 2130837547;
+			
+			// aapt resource value: 0x7f02002c
+			public const int vehicle = 2130837548;
 			
 			static Drawable()
 			{

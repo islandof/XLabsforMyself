@@ -56,6 +56,9 @@
     <Compile Include="4.Pages\Manage\SijiPage.xaml.cs">
       <DependentUpon>SijiPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="4.Pages\TobeFinish.xaml.cs">
+      <DependentUpon>TobeFinish.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.cs" />
     <Compile Include="1.Model\DangerDrive.cs" />
     <Compile Include="1.Model\FormatRows.cs" />
@@ -538,6 +541,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="4.Pages\Manage\SijiList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="4.Pages\TobeFinish.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

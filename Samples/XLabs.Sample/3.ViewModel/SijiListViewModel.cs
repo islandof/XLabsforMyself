@@ -8,7 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Labs.Sample;
 using XLabs.Sample.Model;
 using XLabs.Sample.Services;
-using XLabs.Sample._4.Pages.Manage;
+using XLabs.Sample.Pages.Manage;
 
 namespace XLabs.Sample.ViewModel
 {

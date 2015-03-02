@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace XLabs.Sample.Pages.Manage
+namespace XLabs.Sample.Pages
 {
-    public partial class SijiList : ContentPage
+    public partial class TobeFinish : ContentPage
     {
-        public SijiList()
+        public TobeFinish()
         {
             InitializeComponent();
         }

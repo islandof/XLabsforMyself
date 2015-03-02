@@ -4,7 +4,6 @@ using XLabs.Platform.Services;
 using XLabs.Sample.Pages;
 using XLabs.Sample.Pages.Manage;
 using XLabs.Sample.Pages.Monitor;
-using XLabs.Sample._4.Pages.Manage;
 
 namespace XLabs.Sample
 {

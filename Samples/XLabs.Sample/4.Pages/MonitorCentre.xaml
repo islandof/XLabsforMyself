@@ -51,20 +51,20 @@
     </StackLayout>
 
     <StackLayout Grid.Row="1" Grid.Column="0"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="trace2.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Button_OnClicked"/>
+      <Button Image="trace2.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Tobefinish_OnClicked"/>
       <Label Text="轨迹查询" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
     <StackLayout Grid.Row="1" Grid.Column="1"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="safe2.ico" Style="{StaticResource LayoutButtonStyle}"/>
+      <Button Image="safe2.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Tobefinish_OnClicked"/>
       <Label Text="车况检查" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
     <StackLayout Grid.Row="1" Grid.Column="2"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="gasolin.ico" Style="{StaticResource LayoutButtonStyle}"/>
+      <Button Image="gasolin.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Tobefinish_OnClicked"/>
       <Label Text="油耗" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
 
     <StackLayout Grid.Row="2" Grid.Column="0"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="search.ico" Style="{StaticResource LayoutButtonStyle}"/>
+      <Button Image="search.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Tobefinish_OnClicked"/>
       <Label Text="最近违章" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
 
