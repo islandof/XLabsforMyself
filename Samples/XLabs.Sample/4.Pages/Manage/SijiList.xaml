@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XLabs.Sample.Pages.Monitor.ZhalanAlarmList"
-             Title="栅栏报警">
+             x:Class="XLabs.Sample.Pages.Manage.SijiList" Title="司机管理">
   <ContentPage.Resources>
     <ResourceDictionary>
       <Style x:Key="HeaderStyle" TargetType="Label">
@@ -31,22 +30,15 @@
     <StackLayout Padding="10,5,10,5">
       <SearchBar Text="{Binding keyValues,Mode=TwoWay}"  Style="{StaticResource SearchBarStyle}" SearchCommand="{Binding SearchBarCommand}" />
     </StackLayout>
-    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-      <Label Text="车牌号" Style="{StaticResource HeaderStyle}" />
-      <Label Text="发生时间" Style="{StaticResource HeaderStyle}" />
-      <Label Text="栅栏名字" Style="{StaticResource HeaderStyle}" />      
-    </StackLayout>
-    <ListView ItemsSource="{Binding ZhalanAlarmList,Mode=OneWay}" HasUnevenRows="True">
+
+    <ListView ItemsSource="{Binding SijiList,Mode=OneWay}" HasUnevenRows="True">
       <ListView.ItemTemplate>
         <DataTemplate>
-          <ViewCell>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-              <Label Text="{Binding chepaino,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="Start"/>
-              <Label Text="{Binding dthappen,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="Center"/>
-              <Label Text="{Binding zhalanname,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="End"/>
-              
-            </StackLayout>
-          </ViewCell>
+
+          <ImageCell ImageSource ="nouser.png"
+                     Text="{Binding sijiname,Mode=OneWay}"
+                     Detail="{Binding ownercompanyname,Mode=OneWay}"
+                     Command="{Binding NavigateToDetail}" />
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>

@@ -24,9 +24,20 @@ namespace XLabs.Sample.Pages
         }
 
         private void Vehicle_OnClicked(object sender, EventArgs e)
-        {
-            //Navigation.PushAsync(new QicheList());
+        {         
             Navigation.PushAsync((Page)ViewFactory.CreatePage<QicheListViewModel, Page>());
         }
+
+        private void Driver_OnClicked(object sender, EventArgs e)
+        {            
+            Navigation.PushAsync((Page)ViewFactory.CreatePage<SijiListViewModel, Page>());
+        }
+
+        private void Tobefinish_OnClicked(object sender, EventArgs e)
+        {            
+            Navigation.PushAsync(new TobeFinish());
+        }
+
+
     }
 }

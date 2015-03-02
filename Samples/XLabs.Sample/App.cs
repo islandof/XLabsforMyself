@@ -63,7 +63,7 @@ namespace XLabs.Sample
             ViewFactory.Register<DangerDriveList, DangerDriveListViewModel>();
             ViewFactory.Register<ZhalanAlarmList, ZhalanAlarmListViewModel>();
             ViewFactory.Register<QicheList,QicheListViewModel>();
-            ViewFactory.Register<QichePage,QicheViewModel>();
+            ViewFactory.Register<SijiList,SijiListViewModel>();
 
             var app = Resolver.Resolve<IXFormsApp>();
             if (app == null)

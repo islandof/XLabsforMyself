@@ -290,10 +290,12 @@
     <Content Include="Resources\messagecentre.ico" />
     <Content Include="Resources\monitor.ico" />
     <BundleResource Include="Resources\nocar.png" />
+    <BundleResource Include="Resources\nouser.png" />
     <Content Include="Resources\people.ico" />
     <Content Include="Resources\safe.ico" />
     <Content Include="Resources\safe2.ico" />
     <Content Include="Resources\search.ico" />
+    <BundleResource Include="Resources\tobefinish.png" />
     <Content Include="Resources\trace.ico" />
     <Content Include="Resources\trace2.ico" />
     <Content Include="Resources\vehicle.ico" />

@@ -8,13 +8,14 @@ using Xamarin.Forms;
 using Xamarin.Forms.Labs.Sample;
 using XLabs.Sample.Model;
 using XLabs.Sample.Services;
+using XLabs.Sample.Pages.Manage;
 
 namespace XLabs.Sample.ViewModel
 {
     public class SijiListViewModel : Forms.Mvvm.ViewModel
     {
         private List<SijiViewModel> _sijiList;
-        private string _keyValues;
+        private string _keyValues;        
 
         public SijiListViewModel()
         {
@@ -24,14 +25,16 @@ namespace XLabs.Sample.ViewModel
             Firstload();
             this.SearchBarCommand = new Command(async (nothing) =>
             {
-                ZhalanAlarmList = await GetData(keyValues);
+                SijiList = await GetData(keyValues);
 
             });
+
+            MessagingCenter.Subscribe<SijiViewModel>(this,"",NavigateToDetail);
         }
 
         private async void Firstload()
         {
-            ZhalanAlarmList = await GetData("");
+            SijiList = await GetData("");
         }
 
         private async Task<List<SijiViewModel>> GetData(string keyValues)
@@ -42,8 +45,12 @@ namespace XLabs.Sample.ViewModel
             //return result;
         }
 
+        private async void NavigateToDetail(SijiViewModel item)
+        {
+            await Navigation.PushAsync(new SijiPage { Title = item.sijiname + "的详细信息", BindingContext = item });
+        }
 
-        public List<SijiViewModel> ZhalanAlarmList
+        public List<SijiViewModel> SijiList
         {
             get { return _sijiList; }
             set { SetProperty(ref _sijiList, value); }
