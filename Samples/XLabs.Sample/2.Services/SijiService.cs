@@ -8,16 +8,16 @@ using XLabs.Sample.Model;
 
 namespace XLabs.Sample.Services
 {
-    public class DanDriveService
+    public class SijiService
     {
-        public async Task<List<DangerDrive>> GetData(string keyValues)
+        public async Task<List<Siji>> GetData(string keyValues)
         {
             var client = new HttpClient { BaseAddress = new Uri("http://cloud.tescar.cn/vehicle/") };
 
-            var response = await client.GetAsync(string.IsNullOrEmpty(keyValues) ? "GetTboxalarmintimeData?isspec=1" : "GetTboxalarmintimeData?isspec=1&chepaino=" + keyValues);
+            var response = await client.GetAsync(string.IsNullOrEmpty(keyValues) ? "GetSijiData?isspec=1" : "GetSijiData?isspec=1&keyValues=" + keyValues);
             var itemListJson = response.Content.ReadAsStringAsync().Result;
             var fRows = JsonConvert.DeserializeObject<FormatRows>(itemListJson);
-            var result = JsonConvert.DeserializeObject<List<DangerDrive>>(fRows.rows.ToString());
+            var result = JsonConvert.DeserializeObject<List<Siji>>(fRows.rows.ToString());
             return result;
         }
 

@@ -35,7 +35,18 @@
     <DocumentationFile>bin\Debug\XLabs.Sample.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="1.Model\Siji.cs" />
+    <Compile Include="1.Model\Qiche.cs" />
+    <Compile Include="2.Services\SijiService.cs" />
+    <Compile Include="2.Services\QicheService.cs" />
+    <Compile Include="3.ViewModel\QicheListViewModel.cs" />
+    <Compile Include="3.ViewModel\SijiListViewModel.cs" />
+    <Compile Include="3.ViewModel\SijiViewModel.cs" />
+    <Compile Include="3.ViewModel\QicheViewModel.cs" />
     <Compile Include="4.Pages\Manage\ChartsListPage.cs" />
+    <Compile Include="4.Pages\Manage\QicheList.xaml.cs">
+      <DependentUpon>QicheList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.cs" />
     <Compile Include="1.Model\DangerDrive.cs" />
     <Compile Include="1.Model\FormatRows.cs" />
@@ -498,6 +509,11 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="4.Pages\Manage\QicheList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="..\..\packages\Xamarin.Forms.1.3.4.6332\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.3.4.6332\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
 </Project>

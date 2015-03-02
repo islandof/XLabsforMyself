@@ -2,6 +2,7 @@
 using XLabs.Forms.Services;
 using XLabs.Platform.Services;
 using XLabs.Sample.Pages;
+using XLabs.Sample.Pages.Manage;
 using XLabs.Sample.Pages.Monitor;
 
 namespace XLabs.Sample
@@ -61,6 +62,7 @@ namespace XLabs.Sample
             ViewFactory.Register<LoginPage, LoginViewModel>();
             ViewFactory.Register<DangerDriveList, DangerDriveListViewModel>();
             ViewFactory.Register<ZhalanAlarmList, ZhalanAlarmListViewModel>();
+            ViewFactory.Register<QicheList,QicheListViewModel>();
 
             var app = Resolver.Resolve<IXFormsApp>();
             if (app == null)
@@ -75,6 +77,15 @@ namespace XLabs.Sample
             app.Rotation += (o, e) => Debug.WriteLine("Application Rotated");
             app.Startup += (o, e) => Debug.WriteLine("Application Startup");
             app.Suspended += (o, e) => Debug.WriteLine("Application Suspended");
+        }
+
+        /// <summary>
+        /// for wp
+        /// </summary>
+        /// <returns>page</returns>
+        public static Page GetMainPage()
+        {
+            return new NavigationPage((Page)ViewFactory.CreatePage<LoginViewModel,Page>());
         }
 
         #region 无用

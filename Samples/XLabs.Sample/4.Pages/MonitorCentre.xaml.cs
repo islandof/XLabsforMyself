@@ -33,5 +33,10 @@ namespace XLabs.Sample.Pages
         {
             //Navigation.PushAsync (new DangerDriveSinglePage ());
         }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

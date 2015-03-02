@@ -11,7 +11,7 @@ namespace XLabs.Sample.Services
 {
     public class ZhalanAlarmService
     {
-        public async Task<List<ZhalanAlarm>> GetZhalanAlarmList(string keyValues)
+        public async Task<List<ZhalanAlarm>> GetData(string keyValues)
         {
             var client = new HttpClient { BaseAddress = new Uri("http://cloud.tescar.cn/vehicle/") };
 

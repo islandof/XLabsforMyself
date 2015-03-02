@@ -11,25 +11,25 @@ namespace XLabs.Sample.ViewModel
     public class ZhalanAlarmViewModel : Forms.Mvvm.ViewModel
     {
 
-        public ZhalanAlarmViewModel(ZhalanAlarm zhalanAlarm)
+        public ZhalanAlarmViewModel(ZhalanAlarm item)
         {
             //	_dangerDrive = zhalanAlarm;
 
-            alarmid = zhalanAlarm.alarmid;
-            tboxid = zhalanAlarm.tboxid;
-            qicheid = zhalanAlarm.qicheid;
-            xingchengid = zhalanAlarm.xingchengid;
-            zhalanid = zhalanAlarm.zhalanid;
-            zhalantype = zhalanAlarm.zhalantype;
-            zhalanname = zhalanAlarm.zhalanname;
-            condition = zhalanAlarm.condition;
-            dthappen = zhalanAlarm.dthappen;
-            hasalarm = zhalanAlarm.hasalarm;
-            createtime = zhalanAlarm.createtime;
-            ownercompanyname = zhalanAlarm.ownercompanyname;
-            chepaino = zhalanAlarm.chepaino;
-            ownercompanyid = zhalanAlarm.ownercompanyid;
-            companyid = zhalanAlarm.companyid;
+            alarmid = item.alarmid;
+            tboxid = item.tboxid;
+            qicheid = item.qicheid;
+            xingchengid = item.xingchengid;
+            zhalanid = item.zhalanid;
+            zhalantype = item.zhalantype;
+            zhalanname = item.zhalanname;
+            condition = item.condition;
+            dthappen = item.dthappen;
+            hasalarm = item.hasalarm;
+            createtime = item.createtime;
+            ownercompanyname = item.ownercompanyname;
+            chepaino = item.chepaino;
+            ownercompanyid = item.ownercompanyid;
+            companyid = item.companyid;
 
         }
 
