@@ -37,7 +37,7 @@
     </Grid.ColumnDefinitions>
 
     <StackLayout Grid.Row="0" Grid.Column="0"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="vehicle.ico" Style="{StaticResource LayoutButtonStyle}" />
+      <Button Image="vehicle.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Vehicle_OnClicked"/>
       <Label Text="车辆管理"  Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
     <StackLayout Grid.Row="0" Grid.Column="1"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >

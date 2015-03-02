@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using XLabs.Forms.Mvvm;
 using XLabs.Sample.Pages.Manage;
+using XLabs.Sample.ViewModel;
 
 namespace XLabs.Sample.Pages
 {
@@ -19,6 +21,12 @@ namespace XLabs.Sample.Pages
         private void Charts_OnClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ChartsListPage());
+        }
+
+        private void Vehicle_OnClicked(object sender, EventArgs e)
+        {
+            //Navigation.PushAsync(new QicheList());
+            Navigation.PushAsync((Page)ViewFactory.CreatePage<QicheListViewModel, Page>());
         }
     }
 }

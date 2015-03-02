@@ -28,7 +28,9 @@
                 FontSize = "12"/>
       
     </StackLayout>
-    <Button Text="跳转到XLabsDemo库" Clicked="OnButtonClicked" HorizontalOptions="StartAndExpand" FontSize="12"/>
+    <StackLayout VerticalOptions="End">
+      <Button Text="XLabsDemo库" Clicked="OnButtonClicked" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" FontSize="12"/>  
+    </StackLayout>
     
   </StackLayout>
 </ContentPage>

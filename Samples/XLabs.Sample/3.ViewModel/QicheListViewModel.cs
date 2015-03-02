@@ -11,12 +11,14 @@ using XLabs.Sample.Services;
 
 namespace XLabs.Sample.ViewModel
 {
-    public class ZhalanAlarmListViewModel : Forms.Mvvm.ViewModel
+    public class QicheListViewModel : Forms.Mvvm.ViewModel
     {
-        private List<ZhalanAlarmViewModel> _zhalanAlarmList;
+        public ICommand SearchBarCommand { private set; get; }
+        public ICommand NavigateToDetail { private set; get; }
+        private List<QicheViewModel> _qicheList;
         private string _keyValues;
 
-        public ZhalanAlarmListViewModel()
+        public QicheListViewModel()
         {
             //TaskDangerDriveList = new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""));
             //DangerDriveList = (new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""))).Result;
@@ -24,29 +26,33 @@ namespace XLabs.Sample.ViewModel
             Firstload();
             this.SearchBarCommand = new Command(async (nothing) =>
             {
-                ZhalanAlarmList = await GetData(keyValues);
+                QicheList = await GetData(keyValues);
 
+            });
+            this.NavigateToDetail = new Command(async (nothing) =>
+            {
+                
             });
         }
 
         private async void Firstload()
         {
-            ZhalanAlarmList = await GetData("");
+            QicheList = await GetData("");
         }
 
-        private async Task<List<ZhalanAlarmViewModel>> GetData(string keyValues)
+        private async Task<List<QicheViewModel>> GetData(string keyValues)
         {
-            var _service = new ZhalanAlarmService();
+            var _service = new QicheService();
             var result = await _service.GetData(keyValues);
-            return result.Select(n => new ZhalanAlarmViewModel(n)).ToList();
+            return result.Select(n => new QicheViewModel(n)).ToList();
             //return result;
         }
 
 
-        public List<ZhalanAlarmViewModel> ZhalanAlarmList
+        public List<QicheViewModel> QicheList
         {
-            get { return _zhalanAlarmList; }
-            set { SetProperty(ref _zhalanAlarmList, value); }
+            get { return _qicheList; }
+            set { SetProperty(ref _qicheList, value); }
         }
 
         public string keyValues
@@ -59,8 +65,6 @@ namespace XLabs.Sample.ViewModel
             {
                 SetProperty(ref _keyValues, value);
             }
-        }
-
-        public ICommand SearchBarCommand { private set; get; }
+        }        
     }
 }
