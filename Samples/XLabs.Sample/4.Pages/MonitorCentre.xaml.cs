@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using XLabs.Forms.Mvvm;
+using XLabs.Sample.Pages.Monitor;
 using XLabs.Sample.ViewModel;
 
 namespace XLabs.Sample.Pages
@@ -31,7 +32,7 @@ namespace XLabs.Sample.Pages
 
         private void Locate_OnClicked(object sender, EventArgs e)
         {
-            //Navigation.PushAsync (new DangerDriveSinglePage ());
+            Navigation.PushAsync (new LocalsPage());
         }
 
         private void Tobefinish_OnClicked(object sender, EventArgs e)

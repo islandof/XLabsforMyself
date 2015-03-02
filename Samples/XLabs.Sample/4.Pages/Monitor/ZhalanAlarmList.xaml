@@ -42,7 +42,7 @@
           <ViewCell>
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
               <Label Text="{Binding chepaino,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="Start"/>
-              <Label Text="{Binding dthappen,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="Center"/>
+              <Label Text="{Binding dthappen,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="CenterAndExpand"/>
               <Label Text="{Binding zhalanname,Mode=OneWay}" Style="{StaticResource DetailStyle}" HorizontalOptions="End"/>
               
             </StackLayout>
