@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XLabs.Sample.Pages.Monitor.TraceList"
+             Title="轨迹查询">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="HeaderStyle" TargetType="Label">
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="BackgroundColor" Value="Aqua" />
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="XAlign" Value="Center" />
+        <Setter Property="YAlign" Value="Center" />
+        <Setter Property="FontSize" Value="Medium" />
+      </Style>
+      <Style x:Key="DetailStyle" TargetType="Label">
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="XAlign" Value="Center" />
+        <Setter Property="YAlign" Value="Center" />
+        <Setter Property="FontSize" Value="Small" />
+      </Style>
+      <Style x:Key="SearchBarStyle" TargetType="SearchBar">
+        <!--				<Setter Property="BackgroundColor" Value="White" />-->
+        <Setter Property="Placeholder" Value="查询 (车牌)"/>
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <StackLayout Orientation="Vertical">
+    <StackLayout Padding="10,5,10,5">
+      <SearchBar Text="{Binding keyValues,Mode=TwoWay}"  Style="{StaticResource SearchBarStyle}" SearchCommand="{Binding SearchBarCommand}" />
+    </StackLayout>
+
+    <ListView ItemsSource="{Binding QicheList,Mode=OneWay}" HasUnevenRows="True">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ImageCell ImageSource ="nocar.png"
+                     Text="{Binding chepaino,Mode=OneWay}"
+                     Detail="{Binding stylename,Mode=OneWay}"
+                     Command="{Binding NavigateToTrace}" />
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

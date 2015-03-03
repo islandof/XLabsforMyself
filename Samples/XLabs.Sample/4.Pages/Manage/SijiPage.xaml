@@ -13,7 +13,7 @@
   </ResourceDictionary>
   </ContentPage.Resources>
   <ScrollView>
-    <StackLayout VerticalOptions="FillAndExpand" Padding="50">
+    <StackLayout VerticalOptions="FillAndExpand" Padding="20">
       <Label Text="{Binding sijiname}"
         HorizontalOptions="Center"
         Font="Bold,Large">
@@ -30,15 +30,20 @@
              Source="nouser.png" />
       <controls:Separator Color="{StaticResource SepColor}"/>      
       <StackLayout Orientation="Horizontal">
-        <Label Text="电话：" HorizontalOptions="Start"/>
-        <Label Text="{Binding lianxidianhua}"
-          HorizontalOptions="Start"
-          Font="Bold,Medium" />
+        <Label Text="电话：" HorizontalOptions="Start"/>        
+        <Button Text="{Binding lianxidianhua}" HorizontalOptions="FillAndExpand" Command="{Binding CallCommand}" />
       </StackLayout>
       <controls:Separator Color="{StaticResource SepColor}"/>
       <StackLayout Orientation="Horizontal">
         <Label Text="公司：" HorizontalOptions="Start"/>
         <Label Text="{Binding ownercompanyname}"
+          HorizontalOptions="Start"
+          Font="Bold,Medium" />
+      </StackLayout>
+      <controls:Separator Color="{StaticResource SepColor}"/>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="驾驶证日期：" HorizontalOptions="Start"/>
+        <Label Text="{Binding jiashizhengriqi}"
           HorizontalOptions="Start"
           Font="Bold,Medium" />
       </StackLayout>

@@ -115,6 +115,9 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\carsafe.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="SQLite.Net">
       <HintPath>..\..\packages\SQLite.Net-PCL.2.5.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll</HintPath>
@@ -167,8 +170,6 @@
     <BundleResource Include="Resources\Default%402x.png" />
     <BundleResource Include="Resources\bubbles.jpg" />
     <BundleResource Include="Resources\Icon-60%402x.png" />
-    <BundleResource Include="Resources\Icon-72.png" />
-    <BundleResource Include="Resources\Icon-72%402x.png" />
     <BundleResource Include="Resources\Icon-76.png" />
     <BundleResource Include="Resources\Icon-76%402x.png" />
     <BundleResource Include="Resources\Icon-Small-40.png" />
@@ -270,6 +271,7 @@
     </Content>
     <Content Include="Resources\alert.ico" />
     <Content Include="Resources\alert2.ico" />
+    <BundleResource Include="Resources\ap_1024x1024_icon.png" />
     <Content Include="Resources\call.ico" />
     <Content Include="Resources\call2.ico" />
     <Content Include="Resources\carmanage.ico" />
@@ -285,6 +287,8 @@
     <Content Include="Resources\fast.ico" />
     <Content Include="Resources\gasolin.ico" />
     <Content Include="Resources\gasolin2.ico" />
+    <BundleResource Include="Resources\Icon-72.png" />
+    <BundleResource Include="Resources\Icon-72%402x.png" />
     <Content Include="Resources\locate.ico" />
     <Content Include="Resources\locate2.ico" />
     <Content Include="Resources\messagecentre.ico" />

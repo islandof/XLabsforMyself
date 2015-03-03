@@ -6,27 +6,44 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Labs.Sample;
+using XLabs.Ioc;
+using XLabs.Platform.Device;
 using XLabs.Sample.Model;
 
 namespace XLabs.Sample.ViewModel
 {
     public class SijiViewModel : Forms.Mvvm.ViewModel
     {
+        private readonly IDevice _device;
+
         public ICommand NavigateToDetail { private set; get; }
+
+        public ICommand CallCommand { private set; get; }
 
         public SijiViewModel(Siji item)
         {
             //	_dangerDrive = zhalanAlarm;
+            _device = Resolver.Resolve<IDevice>();
             sijiid = item.sijiid;
             sijiname = item.sijiname;
             lianxidianhua = item.lianxidianhua;
-            jiashizhengriqi = item.jiashizhengriqi;
-            createtime = item.createtime;
+            if (!string.IsNullOrEmpty(item.jiashizhengriqi))
+            {
+                jiashizhengriqi = item.jiashizhengriqi.Replace("T", " ");
+            }
+            if (!string.IsNullOrEmpty(item.createtime))
+            {
+                createtime = item.createtime.Replace("T", " ");
+            }
             companyid = item.companyid;
             ownercompanyid = item.ownercompanyid;
             ownercompanyname = item.ownercompanyname;
 
             this.NavigateToDetail = new Command(() => MessagingCenter.Send(this, ""));
+
+            this.CallCommand = new Command(
+                () => _device.PhoneService.DialNumber(lianxidianhua),
+                () => _device.PhoneService != null);
 
         }
 
@@ -45,5 +62,6 @@ namespace XLabs.Sample.ViewModel
         public string ownercompanyid { get; set; }
 
         public string ownercompanyname { get; set; }
+
     }
 }

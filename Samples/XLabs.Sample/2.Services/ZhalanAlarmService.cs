@@ -15,7 +15,7 @@ namespace XLabs.Sample.Services
         {
             var client = new HttpClient { BaseAddress = new Uri("http://cloud.tescar.cn/vehicle/") };
 
-            var response = await client.GetAsync(string.IsNullOrEmpty(keyValues) ? "gettboxxczhalanalarmdata?isspec=1" : "gettboxxczhalanalarmdata?isspec=1&chepaino=" + keyValues);
+            var response = await client.GetAsync(string.IsNullOrEmpty(keyValues) ? "gettboxxczhalanalarmdata?isspec=1" : "gettboxxczhalanalarmdata?isspec=1&keyValues=" + keyValues);
             var itemListJson = response.Content.ReadAsStringAsync().Result;
             var fRows = JsonConvert.DeserializeObject<FormatRows>(itemListJson);
             var result = JsonConvert.DeserializeObject<List<ZhalanAlarm>>(fRows.rows.ToString());

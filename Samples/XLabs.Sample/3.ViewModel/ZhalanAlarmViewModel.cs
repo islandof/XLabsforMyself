@@ -23,9 +23,15 @@ namespace XLabs.Sample.ViewModel
             zhalantype = item.zhalantype;
             zhalanname = item.zhalanname;
             condition = item.condition;
-            dthappen = item.dthappen;
+            if (!string.IsNullOrEmpty(item.dthappen))
+            {
+                dthappen = item.dthappen.Replace("T", " ");                
+            }            
             hasalarm = item.hasalarm;
-            createtime = item.createtime;
+            if (!string.IsNullOrEmpty(item.createtime))
+            {
+                createtime = item.createtime.Replace("T", " ");
+            }            
             ownercompanyname = item.ownercompanyname;
             chepaino = item.chepaino;
             ownercompanyid = item.ownercompanyid;

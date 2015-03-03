@@ -26,13 +26,17 @@ namespace XLabs.Sample.Pages
 
         private void Alert_OnClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync((Page)ViewFactory.CreatePage<ZhalanAlarmListViewModel, Page>());
-            //Navigation.PushAsync(ViewFactory.CreatePage<ZhalanAlarmListViewModel>());
+            Navigation.PushAsync((Page)ViewFactory.CreatePage<ZhalanAlarmListViewModel, Page>());            
         }
 
         private void Locate_OnClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync (new LocalsPage());
+        }
+
+        private void Trace_OnClicked(object sender, EventArgs e)
+        {            
+            Navigation.PushAsync((Page)ViewFactory.CreatePage<TraceListViewModel, Page>());            
         }
 
         private void Tobefinish_OnClicked(object sender, EventArgs e)

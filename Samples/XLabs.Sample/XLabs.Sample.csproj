@@ -35,14 +35,19 @@
     <DocumentationFile>bin\Debug\XLabs.Sample.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="1.Model\XingCheng.cs" />
     <Compile Include="1.Model\Siji.cs" />
     <Compile Include="1.Model\Qiche.cs" />
     <Compile Include="2.Services\SijiService.cs" />
     <Compile Include="2.Services\QicheService.cs" />
+    <Compile Include="2.Services\XingChengService.cs" />
+    <Compile Include="3.ViewModel\XingChengListViewModel.cs" />
     <Compile Include="3.ViewModel\QicheListViewModel.cs" />
+    <Compile Include="3.ViewModel\XingChengViewModel.cs" />
     <Compile Include="3.ViewModel\SijiListViewModel.cs" />
     <Compile Include="3.ViewModel\SijiViewModel.cs" />
     <Compile Include="3.ViewModel\QicheViewModel.cs" />
+    <Compile Include="3.ViewModel\TraceListViewModel.cs" />
     <Compile Include="4.Pages\Manage\ChartsListPage.cs" />
     <Compile Include="4.Pages\Manage\QichePage.xaml.cs">
       <DependentUpon>QichePage.xaml</DependentUpon>
@@ -58,6 +63,15 @@
     </Compile>
     <Compile Include="4.Pages\Monitor\LocalsPage.xaml.cs">
       <DependentUpon>LocalsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="4.Pages\Monitor\Trace.xaml.cs">
+      <DependentUpon>Trace.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="4.Pages\Monitor\TraceList.xaml.cs">
+      <DependentUpon>TraceList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="4.Pages\Monitor\XingChengList.xaml.cs">
+      <DependentUpon>XingChengList.xaml</DependentUpon>
     </Compile>
     <Compile Include="4.Pages\TobeFinish.xaml.cs">
       <DependentUpon>TobeFinish.xaml</DependentUpon>
@@ -556,6 +570,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="4.Pages\Monitor\LocalsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="4.Pages\Monitor\TraceList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="4.Pages\Monitor\Trace.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="4.Pages\Monitor\XingChengList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
