@@ -35,6 +35,13 @@ namespace XLabs.Sample.Pages
             Navigation.PushAsync (new LocalsPage());
         }
 
+        private void Trace_OnClicked(object sender, EventArgs e)
+        {
+            //var item = new QicheListViewModel();
+            Navigation.PushAsync((Page)ViewFactory.CreatePage<TraceListViewModel, Page>());
+            //Navigation.PushAsync(new TraceList { BindingContext = new QicheListViewModel() });
+        }
+
         private void Tobefinish_OnClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new TobeFinish());

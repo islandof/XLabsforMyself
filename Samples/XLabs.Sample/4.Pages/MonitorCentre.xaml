@@ -51,7 +51,7 @@
     </StackLayout>
 
     <StackLayout Grid.Row="1" Grid.Column="0"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-      <Button Image="trace2.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Tobefinish_OnClicked"/>
+      <Button Image="trace2.ico" Style="{StaticResource LayoutButtonStyle}" Clicked="Trace_OnClicked"/>
       <Label Text="轨迹查询" Font="{StaticResource standardFont}" Style="{StaticResource LayoutLabelStyle}"/>
     </StackLayout>
     <StackLayout Grid.Row="1" Grid.Column="1"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >

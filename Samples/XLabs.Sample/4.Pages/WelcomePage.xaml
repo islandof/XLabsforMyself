@@ -5,7 +5,7 @@
              x:Class="XLabs.Sample.Pages.WelcomePage">
   <StackLayout
     VerticalOptions="Start">
-    <StackLayout x:Name="stkRoot" Padding="0,0,0,0">
+    <StackLayout x:Name="stkRoot" Padding="20">
       <controls:ExtendedLabel
                 Text="陈红伟提交用车申请：由于有业务要和客户约谈，申请2月30号下午使用车牌粤B14152奥迪A6汽车" HorizontalOptions="StartAndExpand" 
                 FontSize = "12"/>

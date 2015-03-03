@@ -5,23 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
-using Xamarin.Forms.Labs.Sample;
-using XLabs.Forms.Mvvm;
-using XLabs.Sample.Model;
 using XLabs.Sample.Pages.Manage;
-using XLabs.Sample.Services;
 using XLabs.Sample.Pages.Monitor;
+using XLabs.Sample.Services;
 
 namespace XLabs.Sample.ViewModel
 {
-    public class QicheListViewModel : Forms.Mvvm.ViewModel
+    public class TraceListViewModel: Forms.Mvvm.ViewModel
     {
         public ICommand SearchBarCommand { private set; get; }
         
         private List<QicheViewModel> _qicheList;
         private string _keyValues;
 
-        public QicheListViewModel(string qicheid)
+        public TraceListViewModel()
         {
             //TaskDangerDriveList = new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""));
             //DangerDriveList = (new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""))).Result;
@@ -32,20 +29,21 @@ namespace XLabs.Sample.ViewModel
                 QicheList = await GetData(keyValues);
 
             });
-            MessagingCenter.Subscribe<QicheViewModel>(this, "", NavigateToDetail);
 
-            MessagingCenter.Subscribe<string>(this, "", NavigateToTrace);
+            MessagingCenter.Subscribe<QicheViewModel>(this, "XingChengTrace", NavigateToTrace);
+            //MessagingCenter.Subscribe<string>(this, "", NavigateToTrace);
         }
 
-        private async void NavigateToDetail(QicheViewModel item)
+        private async void NavigateToTrace(QicheViewModel item)
         {
-            await Navigation.PushAsync(new QichePage { Title = item.chepaino + "的详细信息", BindingContext = item });
+            await Navigation.PushAsync(new XingChengList {BindingContext = new XingChengListViewModel(item.tboxid)});
+            
         }
 
         private async void NavigateToTrace(string item)
         {
-            await Navigation.PushAsync(new QichePage());
-            //await Navigation.PushAsync(new Trace {Title = "轨迹查询",BindingContext = item});
+            //await Navigation.PushAsync(new QichePage());
+            await Navigation.PushAsync(new Trace {Title = "轨迹查询",BindingContext = item});
             //await Navigation.PushAsync(new QichePage { Title = item.chepaino + "的详细信息", BindingContext = item });
         }
 

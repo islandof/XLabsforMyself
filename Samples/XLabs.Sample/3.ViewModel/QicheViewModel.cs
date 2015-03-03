@@ -16,6 +16,8 @@ namespace XLabs.Sample.ViewModel
     {
         public ICommand NavigateToDetail { private set; get; }
 
+        public ICommand NavigateToTrace { private set; get; }
+
         public QicheViewModel(Qiche item)
         {
             //	_dangerDrive = zhalanAlarm;
@@ -45,7 +47,10 @@ namespace XLabs.Sample.ViewModel
             lastactiontime = item.lastactiontime;
 
             this.NavigateToDetail = new Command(() => MessagingCenter.Send(this, ""));
-            
+
+            this.NavigateToTrace =
+                new Command(() => MessagingCenter.Send(this, "XingChengTrace"));
+
         }
 
         public string qicheid { get; set; }
