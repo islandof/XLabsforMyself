@@ -30,10 +30,8 @@
              Source="nouser.png" />
       <controls:Separator Color="{StaticResource SepColor}"/>      
       <StackLayout Orientation="Horizontal">
-        <Label Text="电话：" HorizontalOptions="Start"/>
-        <Label Text="{Binding lianxidianhua}"
-          HorizontalOptions="Start"
-          Font="Bold,Medium" />
+        <Label Text="电话：" HorizontalOptions="Start"/>        
+        <Button Text="{Binding lianxidianhua}" HorizontalOptions="FillAndExpand" Command="{Binding CallCommand}" />
       </StackLayout>
       <controls:Separator Color="{StaticResource SepColor}"/>
       <StackLayout Orientation="Horizontal">
