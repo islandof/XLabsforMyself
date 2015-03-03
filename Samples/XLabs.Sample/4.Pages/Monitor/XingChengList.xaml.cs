@@ -24,7 +24,7 @@ namespace XLabs.Sample.Pages.Monitor
 
         private async void NavigateToDetail(XingChengViewModel item)
         {
-            await Navigation.PushAsync(new Trace { Title = "轨迹查询" });
+            await Navigation.PushAsync(new Trace (item.xingchengid));
             //await Navigation.PushAsync(new XingChengPage { Title = item.chepaino + "的详细信息", BindingContext = item });
         }
     }

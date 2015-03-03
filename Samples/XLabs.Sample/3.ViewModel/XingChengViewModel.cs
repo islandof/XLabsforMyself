@@ -23,13 +23,22 @@ namespace XLabs.Sample.ViewModel
             //	_dangerDrive = zhalanAlarm;
 
             xingchengid = item.xingchengid;
-            starttime = item.starttime;
+            
             licheng = item.licheng;
             extlicheng = "里程：" + item.licheng+"千米";
             chepaino = item.chepaino;
             xingshitime = item.xingshitime;
-            extxingshitime = "行驶时间：" + item.xingshitime + "秒";
-            createtime = item.createtime;
+            if (!string.IsNullOrEmpty(item.starttime))
+            {
+                starttime = item.starttime.Replace("T", " ");
+            }
+
+            extxingshitime = "行驶时间：" + item.xingshitime + "秒" + " 开始时间：" + starttime;
+            if (!string.IsNullOrEmpty(item.createtime))
+            {
+                createtime = item.createtime.Replace("T", " ");
+            }
+            
             
 
             this.NavigateToDetail = new Command(() => MessagingCenter.Send(this, ""));

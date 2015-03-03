@@ -31,7 +31,7 @@
     <StackLayout Padding="10,5,10,5" IsVisible="False">
       <SearchBar Text="{Binding keyValues,Mode=TwoWay}"  Style="{StaticResource SearchBarStyle}" SearchCommand="{Binding SearchBarCommand}" />
     </StackLayout>
-
+    <Label Text="{Binding chepaino}" FontSize="30" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
     <ListView ItemsSource="{Binding XingChengList,Mode=OneWay}" HasUnevenRows="True">
       <ListView.ItemTemplate>
         <DataTemplate>

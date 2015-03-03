@@ -36,15 +36,8 @@ namespace XLabs.Sample.ViewModel
 
         private async void NavigateToTrace(QicheViewModel item)
         {
-            await Navigation.PushAsync(new XingChengList {BindingContext = new XingChengListViewModel(item.tboxid)});
+            await Navigation.PushAsync(new XingChengList {BindingContext = new XingChengListViewModel(item.tboxid,item.chepaino)});
             
-        }
-
-        private async void NavigateToTrace(string item)
-        {
-            //await Navigation.PushAsync(new QichePage());
-            await Navigation.PushAsync(new Trace {Title = "轨迹查询",BindingContext = item});
-            //await Navigation.PushAsync(new QichePage { Title = item.chepaino + "的详细信息", BindingContext = item });
         }
 
         private async void Firstload()

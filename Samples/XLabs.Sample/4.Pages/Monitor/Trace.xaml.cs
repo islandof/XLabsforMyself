@@ -10,9 +10,16 @@ namespace XLabs.Sample.Pages.Monitor
 {
     public partial class Trace : ContentPage
     {
-        public Trace()
+        public Trace(string id)
         {
             InitializeComponent();
+            Init(id);
+
+        }
+
+        private void Init(string id)
+        {
+            Webview.Source = "http://cloud.tescar.cn/vehicle/MobileCarTrace?xingchengid=" + id;
         }
     }
 }

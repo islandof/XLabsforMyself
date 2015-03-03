@@ -20,12 +20,13 @@ namespace XLabs.Sample.ViewModel
         
         private List<XingChengViewModel> _xingChengList;
         private string _keyValues;
+        private string _chepaino;
 
-        public XingChengListViewModel(string id)
+        public XingChengListViewModel(string id,string chepaino)
         {
             //TaskDangerDriveList = new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""));
             //DangerDriveList = (new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""))).Result;
-
+            chepaino = chepaino;
             Firstload(id);
             //this.SearchBarCommand = new Command(async (nothing) =>
             //{
@@ -35,20 +36,6 @@ namespace XLabs.Sample.ViewModel
             
 
             //MessagingCenter.Subscribe<string>(this, "", NavigateToTrace);
-        }
-
-        private async void NavigateToDetail(XingChengViewModel item)
-        {
-            this.keyValues = item.xingchengid;
-            await Navigation.PushAsync(new Trace {Title = "轨迹查询"});
-            //await Navigation.PushAsync(new XingChengPage { Title = item.chepaino + "的详细信息", BindingContext = item });
-        }
-
-        private async void NavigateToTrace(string item)
-        {
-            //await Navigation.PushAsync(new XingChengPage());
-            //await Navigation.PushAsync(new Trace {Title = "轨迹查询",BindingContext = item});
-            //await Navigation.PushAsync(new XingChengPage { Title = item.chepaino + "的详细信息", BindingContext = item });
         }
 
         private async void Firstload(string item)
@@ -81,6 +68,18 @@ namespace XLabs.Sample.ViewModel
             {
                 SetProperty(ref _keyValues, value);
             }
-        }        
+        }
+
+        public string chepaino
+        {
+            get
+            {
+                return _chepaino;
+            }
+            set
+            {
+                SetProperty(ref _chepaino, value);
+            }
+        }
     }
 }

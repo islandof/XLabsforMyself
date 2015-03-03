@@ -20,8 +20,14 @@ namespace XLabs.Sample.ViewModel
             sijiid = item.sijiid;
             sijiname = item.sijiname;
             lianxidianhua = item.lianxidianhua;
-            jiashizhengriqi = item.jiashizhengriqi;
-            createtime = item.createtime;
+            if (!string.IsNullOrEmpty(item.jiashizhengriqi))
+            {
+                jiashizhengriqi = item.jiashizhengriqi.Replace("T", " ");
+            }
+            if (!string.IsNullOrEmpty(item.createtime))
+            {
+                createtime = item.createtime.Replace("T", " ");
+            }
             companyid = item.companyid;
             ownercompanyid = item.ownercompanyid;
             ownercompanyname = item.ownercompanyname;

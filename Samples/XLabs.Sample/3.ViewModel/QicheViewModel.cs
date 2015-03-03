@@ -35,16 +35,25 @@ namespace XLabs.Sample.ViewModel
             sijiid = item.sijiid;
             sijiname = item.sijiname;
             initavgpenyou = item.initavgpenyou;
-            baoxianlimit = item.baoxianlimit;
+            if (!string.IsNullOrEmpty(item.baoxianlimit))
+            {
+                baoxianlimit = item.baoxianlimit.Replace("T", " ");    
+            }            
             xingshizhenglimit = item.xingshizhenglimit;
             currentlocationx = item.currentlocationx;
             currentlocationy = item.currentlocationy;
             currentspeed = item.currentspeed;
             currentdirect = item.currentdirect;
-            createtime = item.createtime;
+            if (!string.IsNullOrEmpty(item.createtime))
+            {
+                createtime = item.createtime.Replace("T", " ");
+            }            
             ownercompanyid = item.ownercompanyid;
             ownercompanyname = item.ownercompanyname;
-            lastactiontime = item.lastactiontime;
+            if (!string.IsNullOrEmpty(item.lastactiontime))
+            {
+                lastactiontime = item.lastactiontime.Replace("T", " ");
+            }
 
             this.NavigateToDetail = new Command(() => MessagingCenter.Send(this, ""));
 

@@ -21,7 +21,7 @@ namespace XLabs.Sample.ViewModel
         private List<QicheViewModel> _qicheList;
         private string _keyValues;
 
-        public QicheListViewModel(string qicheid)
+        public QicheListViewModel()
         {
             //TaskDangerDriveList = new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""));
             //DangerDriveList = (new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""))).Result;
