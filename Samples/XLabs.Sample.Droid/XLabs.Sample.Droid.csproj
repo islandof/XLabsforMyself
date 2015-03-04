@@ -51,6 +51,7 @@
     </MonoDroidExtraArgs>
     <DefineConstants>__Android__</DefineConstants>
     <DocumentationFile>bin\Debug\XLabs.Sample.Droid.XML</DocumentationFile>
+    <AndroidSigningKeyStore>/Users/zhongzichao/.local/share/Xamarin/Mono for Android/debug.keystore</AndroidSigningKeyStore>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android.Export" />
