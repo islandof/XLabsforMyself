@@ -37,7 +37,7 @@
 
           <ImageCell ImageSource ="nouser.png"
                      Text="{Binding sijiname,Mode=OneWay}"
-                     Detail="{Binding ownercompanyname,Mode=OneWay}"
+                     Detail="{Binding extdetail,Mode=OneWay}"
                      Command="{Binding NavigateToDetail}" />
         </DataTemplate>
       </ListView.ItemTemplate>

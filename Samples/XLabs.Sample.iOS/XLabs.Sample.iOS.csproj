@@ -33,6 +33,7 @@
     <MtouchI18n>
     </MtouchI18n>
     <MtouchSdkVersion>7.1</MtouchSdkVersion>
+    <ApplicationIcon>Resources\carsafe.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -51,6 +52,7 @@
     <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
     <MtouchI18n>
     </MtouchI18n>
+    <ApplicationIcon>Resources\carsafe.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -70,6 +72,7 @@
     <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
     <MtouchI18n>
     </MtouchI18n>
+    <ApplicationIcon>Resources\carsafe.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -87,6 +90,7 @@
     </MtouchI18n>
     <DocumentationFile>bin\iPhone\Release\XLabs.Sample.iOS.xml</DocumentationFile>
     <MtouchUseSGen>True</MtouchUseSGen>
+    <ApplicationIcon>Resources\carsafe.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>full</DebugType>
@@ -101,6 +105,7 @@
     <CodesignProvision>Automatic:AdHoc</CodesignProvision>
     <CodesignKey>iPhone Distribution</CodesignKey>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ApplicationIcon>Resources\carsafe.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
     <DebugType>full</DebugType>
@@ -114,6 +119,7 @@
     <CodesignProvision>Automatic:AppStore</CodesignProvision>
     <CodesignKey>iPhone Distribution</CodesignKey>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ApplicationIcon>Resources\carsafe.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\carsafe.ico</ApplicationIcon>
@@ -185,6 +191,12 @@
     <BundleResource Include="Resources\ToolbarGradient1.png" />
     <BundleResource Include="Resources\ToolbarGradient2.png" />
     <BundleResource Include="Resources\blackbackground.png" />
+    <BundleResource Include="Resources\icon120.jpg" />
+    <BundleResource Include="Resources\icon120.png" />
+    <BundleResource Include="Resources\icon152.jpg" />
+    <BundleResource Include="Resources\icon76.jpg" />
+    <BundleResource Include="Resources\icon80.jpg" />
+    <BundleResource Include="Resources\icon_120x120.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\app.config" />

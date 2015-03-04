@@ -31,11 +31,11 @@
       <controls:Separator Color="{StaticResource SepColor}"/>      
       <StackLayout Orientation="Horizontal">
         <Label Text="电话：" HorizontalOptions="Start"/>        
-        <Button Text="{Binding lianxidianhua}" HorizontalOptions="FillAndExpand" Command="{Binding CallCommand}" />
+        <Button Text="{Binding lianxidianhua}" HorizontalOptions="StartAndExpand" FontAttributes="Bold" FontSize="20" Command="{Binding CallCommand}" />
       </StackLayout>
       <controls:Separator Color="{StaticResource SepColor}"/>
       <StackLayout Orientation="Horizontal">
-        <Label Text="公司：" HorizontalOptions="Start"/>
+        <Label Text="公司：" HorizontalOptions="Start" VerticalOptions="Center"/>
         <Label Text="{Binding ownercompanyname}"
           HorizontalOptions="Start"
           Font="Bold,Medium" />
