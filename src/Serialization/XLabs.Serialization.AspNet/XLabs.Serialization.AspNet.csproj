@@ -44,7 +44,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="System.Net.Http.Formatting" />
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\..\..\build\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MediaTypeJsonSerializer.cs" />

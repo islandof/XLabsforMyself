@@ -14,71 +14,66 @@ using XLabs.Sample.Pages.Monitor;
 
 namespace XLabs.Sample.ViewModel
 {
-    public class QicheListViewModel : Forms.Mvvm.ViewModel
-    {
-        public ICommand SearchBarCommand { private set; get; }
-        
-        private List<QicheViewModel> _qicheList;
-        private string _keyValues;
+	public class QicheListViewModel : Forms.Mvvm.ViewModel
+	{
+		public ICommand SearchBarCommand { private set; get; }
 
-        public QicheListViewModel()
-        {
-            //TaskDangerDriveList = new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""));
-            //DangerDriveList = (new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""))).Result;
+		private List<QicheViewModel> _qicheList;
+		private string _keyValues;
 
-            Firstload();
-            this.SearchBarCommand = new Command(async (nothing) =>
-            {
-                QicheList = await GetData(keyValues);
+		public QicheListViewModel ()
+		{
+			//TaskDangerDriveList = new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""));
+			//DangerDriveList = (new NotifyTaskCompletion<List<DangerDriveViewModel>> (GetDangerDriveList (""))).Result;
 
-            });
-            MessagingCenter.Subscribe<QicheViewModel>(this, "", NavigateToDetail);
+			Firstload ();
+			this.SearchBarCommand = new Command (async (nothing) => {
+				QicheList = await GetData (keyValues);
 
-            MessagingCenter.Subscribe<string>(this, "", NavigateToTrace);
-        }
+			});
+			MessagingCenter.Subscribe<QicheViewModel> (this, "", NavigateToDetail);
 
-        private async void NavigateToDetail(QicheViewModel item)
-        {
-            await Navigation.PushAsync(new QichePage { Title = item.chepaino + "的详细信息", BindingContext = item });
-        }
+			MessagingCenter.Subscribe<string> (this, "", NavigateToTrace);
+		}
 
-        private async void NavigateToTrace(string item)
-        {
-            await Navigation.PushAsync(new QichePage());
-            //await Navigation.PushAsync(new Trace {Title = "轨迹查询",BindingContext = item});
-            //await Navigation.PushAsync(new QichePage { Title = item.chepaino + "的详细信息", BindingContext = item });
-        }
+		private async void NavigateToDetail (QicheViewModel item)
+		{
+			await Navigation.PushAsync (new QichePage { Title = item.chepaino + "的详细信息", BindingContext = item });
+		}
 
-        private async void Firstload()
-        {
-            QicheList = await GetData("");
-        }
+		private async void NavigateToTrace (string item)
+		{
+			await Navigation.PushAsync (new QichePage (), true);
+			//await Navigation.PushAsync(new Trace {Title = "轨迹查询",BindingContext = item});
+			//await Navigation.PushAsync(new QichePage { Title = item.chepaino + "的详细信息", BindingContext = item });
+		}
 
-        private async Task<List<QicheViewModel>> GetData(string keyValues)
-        {
-            var _service = new QicheService();
-            var result = await _service.GetData(keyValues);
-            return result.Select(n => new QicheViewModel(n)).ToList();
-            //return result;
-        }
+		private async void Firstload ()
+		{
+			QicheList = await GetData ("");
+		}
+
+		private async Task<List<QicheViewModel>> GetData (string keyValues)
+		{
+			var _service = new QicheService ();
+			var result = await _service.GetData (keyValues);
+			return result.Select (n => new QicheViewModel (n)).ToList ();
+			//return result;
+		}
 
 
-        public List<QicheViewModel> QicheList
-        {
-            get { return _qicheList; }
-            set { SetProperty(ref _qicheList, value); }
-        }
+		public List<QicheViewModel> QicheList {
+			get { return _qicheList; }
+			set { SetProperty (ref _qicheList, value); }
+		}
 
-        public string keyValues
-        {
-            get
-            {
-                return _keyValues;
-            }
-            set
-            {
-                SetProperty(ref _keyValues, value);
-            }
-        }        
-    }
+		public string keyValues {
+			get {
+				return _keyValues;
+			}
+			set {
+				SetProperty (ref _keyValues, value);
+			}
+		}
+	}
 }

@@ -153,7 +153,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Default-568h%402x.png" />
     <BundleResource Include="fonts\Roboto-Light.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
@@ -172,17 +171,10 @@
     <BundleResource Include="Resources\pie27_32.png" />
     <BundleResource Include="Resources\pie30_32.png" />
     <BundleResource Include="Resources\services1_32.png" />
-    <BundleResource Include="Resources\Default.png" />
-    <BundleResource Include="Resources\Default%402x.png" />
     <BundleResource Include="Resources\bubbles.jpg" />
     <BundleResource Include="Resources\Icon-60%402x.png" />
     <BundleResource Include="Resources\Icon-76.png" />
     <BundleResource Include="Resources\Icon-76%402x.png" />
-    <BundleResource Include="Resources\Icon-Small-40.png" />
-    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
-    <BundleResource Include="Resources\Icon-Small-50.png" />
-    <BundleResource Include="Resources\Icon-Small-50%402x.png" />
-    <BundleResource Include="Resources\Icon-Small.png" />
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon.png" />
     <BundleResource Include="Resources\Icon%402x.png" />
@@ -197,6 +189,7 @@
     <BundleResource Include="Resources\icon76.jpg" />
     <BundleResource Include="Resources\icon80.jpg" />
     <BundleResource Include="Resources\icon_120x120.png" />
+    <BundleResource Include="Resources\icon120x120.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\app.config" />
